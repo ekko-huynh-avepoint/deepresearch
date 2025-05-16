@@ -23,37 +23,23 @@ research_manager = ResearchManager()
 @mcp.tool()
 async def deep_research(
     query: str,
-    model: str = "groq",
     output_dir: str = None
 ):
     try:
         if output_dir is None:
-            output_dir = f"./results/{model}"
+            output_dir = f"./results/"
 
         research_manager.set_topic(query)
 
         research_manager.run_groq(output_dir=output_dir)
 
-        # if model == "gpt":
-        #     research_manager.run_gpt(output_dir=output_dir)
-        # elif model == "groq":
-        #     research_manager.run_groq(output_dir=output_dir)
-        # elif model == "ollama":
-        #     research_manager.run_ollama(output_dir=output_dir)
-        # else:
-        #     return {
-        #         "status": "error",
-        #         "summary": f"Unknown model: {model}. Choose from 'gpt', 'groq', 'ollama'."
-        #     }
-
         return {
             "status": "success",
             "summary": (
-                f"✅ Research completed using '{model}' backend.\n"
+                f"✅ Research completed using backend.\n"
                 f"Results saved in: {output_dir}/\n"
             ),
             "output_dir": output_dir,
-            "model": model,
             "query": query
         }
     except Exception as err:
