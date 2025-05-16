@@ -6,15 +6,15 @@ from typing import Union, Optional, Any, List, Tuple, Dict
 
 import numpy as np
 import requests
-from dotenv import load_dotenv
 from sklearn.metrics.pairwise import cosine_similarity
-
+from .embed_format import ensure_embedding_format, safe_cosine_similarity
 from ....knowledge_storm.encoder import get_encoder
 from ...interface import Information, InformationTable, Article, ArticleSectionNode
 from ...utils import ArticleTextProcessing, FileIOHelper
 
-load_dotenv()
+from dotenv import load_dotenv
 
+load_dotenv()
 
 class DialogueTurn:
     def __init__(
@@ -111,7 +111,6 @@ class StormInformationTable(InformationTable):
         return cls(conversations)
 
 
-
     @staticmethod
     def paraphrase_with_ollama(text):
         model = os.environ.get("PARAPHRASE_MODEL")
@@ -196,7 +195,7 @@ class StormInformationTable(InformationTable):
         for query in queries:
             encoded_query = self.encoder.encode([query])[0]
             if len(self.encoded_snippets) > 0:
-                sim = cosine_similarity([encoded_query], self.encoded_snippets)[0]
+                sim = safe_cosine_similarity([encoded_query], self.encoded_snippets)[0]
                 sorted_indices = np.argsort(sim)
                 for i in sorted_indices[-search_top_k:][::-1]:
                     selected_urls.append(self.collected_urls[i])

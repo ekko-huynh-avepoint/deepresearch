@@ -1,0 +1,1407 @@
+{
+  "https://data.who.int/dashboards/covid19/cases": {
+    "url": "https://data.who.int/dashboards/covid19/cases",
+    "description": "This global summary of COVID-19 cases includes data on confirmed cases reported to WHO from the comprehensive COVID-19 case monitoring.",
+    "snippets": [
+      "An outcome of these differences in reporting is that WHO may receive daily data from some countries, while other countries may only report data to WHO once ...",
+      "This global summary of COVID-19 cases includes data on confirmed cases reported to WHO from the comprehensive COVID-19 case monitoring.",
+      "Number of COVID-19 cases reported to WHO. Reported COVID-19 cases. Country, Cases. World, 25.5k. Brazil, 7.3k. United Kingdom of Great Britain And Northern ..."
+    ],
+    "title": "WHO COVID-19 dashboard - WHO Data",
+    "meta": {
+      "query": "latest global Covid19 pandemic situation"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.who.int/europe/emergencies/situations/covid-19": {
+    "url": "https://www.who.int/europe/emergencies/situations/covid-19",
+    "description": "The lifting of the Public Health Emergency of International Concern status by WHO on 5 May 2023, signalled the start of a new phase of the global pandemic's...",
+    "snippets": [
+      "On 25 October 2023 WHO/Europe made several changes to its respiratory virus surveillance and data reporting systems. The COVID-19 Situation Dashboard played a ...",
+      "The lifting of the Public Health Emergency of International Concern status by WHO on 5 May 2023, signalled the start of a new phase of the global pandemic's..."
+    ],
+    "title": "Coronavirus disease (COVID-19) pandemic",
+    "meta": {
+      "query": "latest global Covid19 pandemic situation"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.kff.org/coronavirus-covid-19/issue-brief/global-covid-19-tracker/": {
+    "url": "https://www.kff.org/coronavirus-covid-19/issue-brief/global-covid-19-tracker/",
+    "description": "3 days ago \u2014 This tracker provides the cumulative number of confirmed COVID-19 cases and deaths, as well as the rate of daily COVID-19 cases and deaths by country, income, ...",
+    "snippets": [
+      "3 days ago \u2014 This tracker provides the cumulative number of confirmed COVID-19 cases and deaths, as well as the rate of daily COVID-19 cases and deaths by country, income, ..."
+    ],
+    "title": "Global COVID-19 Tracker",
+    "meta": {
+      "query": "latest global Covid19 pandemic situation"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.worldometers.info/coronavirus/": {
+    "url": "https://www.worldometers.info/coronavirus/",
+    "description": "Coronavirus Cases: 704,753,890. view by country. Deaths: 7,010,681. Recovered: 675,619,811. Active Cases. 22,123,398. Currently Infected Patients. 22,088,604 ( ...",
+    "snippets": [
+      "Daily and weekly updated statistics tracking the number of COVID-19 cases, recovered, and deaths ... 704,753,890. view by country. Deaths: 7,010,681 ...",
+      "... Trends - Graphs - Countries - News. Coronavirus Cases: 704,753,890. view by country. Deaths: 7,010,681. Recovered: 675,619,811. Active Cases. 22,123,398.",
+      "Coronavirus Cases: 704,753,890. view by country. Deaths: 7,010,681. Recovered: 675,619,811. Active Cases. 22,123,398. Currently Infected Patients. 22,088,604 ( ..."
+    ],
+    "title": "COVID - Coronavirus Statistics",
+    "meta": {
+      "query": "current Covid19 pandemic statistics"
+    },
+    "citation_uuid": -1
+  },
+  "https://covid19.who.int/": {
+    "url": "https://covid19.who.int/",
+    "description": "The latest data for coronavirus (COVID-19) cases from the WHO COVID-19 dashboard.",
+    "snippets": [
+      "An outcome of these differences in reporting is that WHO may receive daily data from some countries, while other countries may only report data to WHO once ...",
+      "This global summary of COVID-19 cases includes data on confirmed ... death counts, and variable delays to reflecting these statistics at a global level.",
+      "The latest data for coronavirus (COVID-19) cases from the WHO COVID-19 dashboard."
+    ],
+    "title": "WHO COVID-19 dashboard: COVID-19 cases",
+    "meta": {
+      "query": "current Covid19 pandemic statistics"
+    },
+    "citation_uuid": -1
+  },
+  "https://ourworldindata.org/covid-cases": {
+    "url": "https://ourworldindata.org/covid-cases",
+    "description": "This page presents data on confirmed cases, meaning the number of people who have been tested and confirmed to be infected by the SARS-CoV-2 virus.",
+    "snippets": [
+      "This page presents data on confirmed cases, meaning the number of people who have been tested and confirmed to be infected by the SARS-CoV-2 virus."
+    ],
+    "title": "Coronavirus (COVID-19) Cases",
+    "meta": {
+      "query": "global Covid19 cases and trends"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports": {
+    "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports",
+    "description": "The Weekly Epidemiological Update provides an overview of the global, regional and country-level COVID-19 cases and deaths, highlighting key data and trends ...",
+    "snippets": [
+      "The Weekly Epidemiological Update provides an overview of the global, regional and country-level COVID-19 cases and deaths, highlighting key data and trends ..."
+    ],
+    "title": "Coronavirus Disease (COVID-19) Situation Reports",
+    "meta": {
+      "query": "covid 19 current global situation"
+    },
+    "citation_uuid": -1
+  },
+  "https://en.wikipedia.org/wiki/COVID-19_pandemic_by_country_and_territory": {
+    "url": "https://en.wikipedia.org/wiki/COVID-19_pandemic_by_country_and_territory",
+    "description": "As of 10 April 2022, there are about 97 million cases and about 1.4 million deaths in North America; about 88.9 million have recovered from COVID-19, meaning ...",
+    "snippets": [
+      "As of 10 April 2022, there are about 97 million cases and about 1.4 million deaths in North America; about 88.9 million have recovered from COVID-19, meaning ..."
+    ],
+    "title": "COVID-19 pandemic by country and territory",
+    "meta": {
+      "query": "covid 19 cases by country"
+    },
+    "citation_uuid": -1
+  },
+  "https://covid.cdc.gov/covid-data-tracker/": {
+    "url": "https://covid.cdc.gov/covid-data-tracker/",
+    "description": "CDC's home for COVID-19 data. Visualizations, graphs, and data in one easy-to-use website.",
+    "snippets": [
+      "CDC's home for COVID-19 data. Visualizations, graphs, and data in one easy-to-use website."
+    ],
+    "title": "CDC COVID Data Tracker",
+    "meta": {
+      "query": "Here are the queries I would use to find the information about the Covid19 tracker:"
+    },
+    "citation_uuid": -1
+  },
+  "https://health.google.com/covid-19/open-data/": {
+    "url": "https://health.google.com/covid-19/open-data/",
+    "description": "The Google Health COVID-19 Open Data Repository is one of the most comprehensive collections of up-to-date COVID-19-related information.",
+    "snippets": [
+      "The Google Health COVID-19 Open Data Repository is one of the most comprehensive collections of up-to-date COVID-19-related information."
+    ],
+    "title": "COVID-19 Open Data Repository",
+    "meta": {
+      "query": "Covid 19 tracker data sources"
+    },
+    "citation_uuid": -1
+  },
+  "https://coronavirus.jhu.edu/map.html": {
+    "url": "https://coronavirus.jhu.edu/map.html",
+    "description": "Data sources: Full list. Downloadable database: GitHub, Feature Layer. Led by JHU CSSE. Technical Support: Esri Living Atlas team and JHU APL. Financial Support ...",
+    "snippets": [
+      "Data sources: Full list. Downloadable database: GitHub, Feature Layer. Led by JHU CSSE. Technical Support: Esri Living Atlas team and JHU APL. Financial Support ..."
+    ],
+    "title": "COVID-19 Map - Johns Hopkins Coronavirus Resource Center",
+    "meta": {
+      "query": "Covid 19 tracker data sources"
+    },
+    "citation_uuid": -1
+  },
+  "https://data.who.int/dashboards/covid19/data": {
+    "url": "https://data.who.int/dashboards/covid19/data",
+    "description": "All counts are subject to variations in case detection, definitions, laboratory testing, vaccination strategy, and reporting strategies. Other important ...",
+    "snippets": [
+      "All counts are subject to variations in case detection, definitions, laboratory testing, vaccination strategy, and reporting strategies. Other important ..."
+    ],
+    "title": "WHO COVID-19 dashboard data",
+    "meta": {
+      "query": "'how does who address differences in covid 19 case reporting'"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC9409667/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9409667/",
+    "description": "by R Filip \u00b7 2022 \u00b7 Cited by 598 \u2014 Global disparities in economic conditions left health care workers in low and middle-developed countries at greater risk of exposure to the virus than those in ...",
+    "snippets": [
+      "by R Filip \u00b7 2022 \u00b7 Cited by 598 \u2014 Global disparities in economic conditions left health care workers in low and middle-developed countries at greater risk of exposure to the virus than those in ..."
+    ],
+    "title": "Global Challenges to Public Health Care Systems during ...",
+    "meta": {
+      "query": "'countries with unique challenges in reporting covid 19 cases'"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.who.int/about/funding/invest-in-who/investment-case-2.0/challenges": {
+    "url": "https://www.who.int/about/funding/invest-in-who/investment-case-2.0/challenges",
+    "description": "The pandemic has sharply focused policy attention but it is just one of the many challenges to which global health must respond, along with climate change and ...",
+    "snippets": [
+      "The pandemic has sharply focused policy attention but it is just one of the many challenges to which global health must respond, along with climate change and ..."
+    ],
+    "title": "The COVID-19 pandemic and continuing challenges to ...",
+    "meta": {
+      "query": "'countries with unique challenges in reporting covid 19 cases'"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.biomedcentral.com/collections/COVID19-research-methodology": {
+    "url": "https://www.biomedcentral.com/collections/COVID19-research-methodology",
+    "description": "This collection aims to report on original peer-reviewed research articles in methodological approaches to medical research related to COVID-19.",
+    "snippets": [
+      "This collection aims to report on original peer-reviewed research articles in methodological approaches to medical research related to COVID-19."
+    ],
+    "title": "Methodologies for COVID-19 research and data analysis",
+    "meta": {
+      "query": "'regions with varying methodologies in covid 19 reporting'"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7928144/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7928144/",
+    "description": "by RK Pal \u00b7 2020 \u00b7 Cited by 12 \u2014 Current review is about two regions from India (Dharavi and Kerala) who were different in their approach as compared to rest of the country and were able to ...",
+    "snippets": [
+      "by RK Pal \u00b7 2020 \u00b7 Cited by 12 \u2014 Current review is about two regions from India (Dharavi and Kerala) who were different in their approach as compared to rest of the country and were able to ..."
+    ],
+    "title": "Comparison between two different successful approaches ...",
+    "meta": {
+      "query": "'regions with varying methodologies in covid 19 reporting'"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.nature.com/articles/s41598-024-62300-y": {
+    "url": "https://www.nature.com/articles/s41598-024-62300-y",
+    "description": "by J Pan \u00b7 2024 \u00b7 Cited by 1 \u2014 This study provided a comprehensive analysis of various factors influencing the transmission of COVID-19, incorporating both human and environmental variables.",
+    "snippets": [
+      "by J Pan \u00b7 2024 \u00b7 Cited by 1 \u2014 This study provided a comprehensive analysis of various factors influencing the transmission of COVID-19, incorporating both human and environmental variables."
+    ],
+    "title": "Assessing eco-geographic influences on COVID-19 ...",
+    "meta": {
+      "query": "'regions with varying methodologies in covid 19 reporting'"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.sciencedirect.com/science/article/pii/S1473309924007692?dgcid=author": {
+    "url": "https://www.sciencedirect.com/science/article/pii/S1473309924007692?dgcid=author",
+    "description": "10 Feb 2025 \u2014 The presence of a SARS-CoV-2 reservoir in long COVID suggests that the virus might escape immune-mediated clearance, perhaps due to ...",
+    "snippets": [
+      "10 Feb 2025 \u2014 The presence of a SARS-CoV-2 reservoir in long COVID suggests that the virus might escape immune-mediated clearance, perhaps due to ..."
+    ],
+    "title": "Targeting the SARS-CoV-2 reservoir in long COVID",
+    "meta": {
+      "query": "latest research SARSCoV2 natural reservoir"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(24)00769-2/abstract": {
+    "url": "https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(24)00769-2/abstract",
+    "description": "by AD Proal \u00b7 Cited by 6 \u2014 A growing body of evidence shows that SARS-CoV-2 can persist for months or years following COVID-19 in a subset of individuals, with this ...",
+    "snippets": [
+      "by AD Proal \u00b7 Cited by 6 \u2014 A growing body of evidence shows that SARS-CoV-2 can persist for months or years following COVID-19 in a subset of individuals, with this ..."
+    ],
+    "title": "Targeting the SARS-CoV-2 reservoir in long COVID",
+    "meta": {
+      "query": "latest research SARSCoV2 natural reservoir"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC8128218/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8128218/",
+    "description": "by K Sharun \u00b7 2021 \u00b7 Cited by 195 \u2014 This review analyzes the current evidence of SARS-CoV-2 natural infection in domestic and wild animal species and their possible implications on public health.",
+    "snippets": [
+      "by K Sharun \u00b7 2021 \u00b7 Cited by 195 \u2014 This review analyzes the current evidence of SARS-CoV-2 natural infection in domestic and wild animal species and their possible implications on public health."
+    ],
+    "title": "SARS-CoV-2 in animals: potential for unknown reservoir ...",
+    "meta": {
+      "query": "latest research SARSCoV2 natural reservoir"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC8072559/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8072559/",
+    "description": "by M Maurin \u00b7 2021 \u00b7 Cited by 50 \u2014 SARS-CoV-2 is currently considered to have emerged from a bat coronavirus reservoir. However, the real natural cycle of this virus remains ...",
+    "snippets": [
+      "by M Maurin \u00b7 2021 \u00b7 Cited by 50 \u2014 SARS-CoV-2 is currently considered to have emerged from a bat coronavirus reservoir. However, the real natural cycle of this virus remains ..."
+    ],
+    "title": "Current Status of Putative Animal Sources of SARS-CoV-2 ...",
+    "meta": {
+      "query": "As Dr. J Liu, I would utilize the following Google search queries to find the most current and reliable information about the animal host or source of the SARSCoV2 virus:"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.nature.com/articles/s41467-022-30698-6": {
+    "url": "https://www.nature.com/articles/s41467-022-30698-6",
+    "description": "by CCS Tan \u00b7 2022 \u00b7 Cited by 130 \u2014 SARS-CoV-2 can infect cells of multiple mammalian host species, primarily due to the conservation of the angiotensin-converting enzyme 2 (ACE2), ...",
+    "snippets": [
+      "by CCS Tan \u00b7 2022 \u00b7 Cited by 130 \u2014 Secondary host jumps of SARS-CoV-2 into animals have been documented for a variety of species, including cats and dogs, tigers and lions in zoos ...",
+      "by CCS Tan \u00b7 2022 \u00b7 Cited by 130 \u2014 SARS-CoV-2 can infect cells of multiple mammalian host species, primarily due to the conservation of the angiotensin-converting enzyme 2 (ACE2), ...",
+      "by CCS Tan \u00b7 2022 \u00b7 Cited by 130 \u2014 Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is able to infect multiple mammalian host species, which is a characteristic seen ..."
+    ],
+    "title": "Transmission of SARS-CoV-2 from humans to animals and ...",
+    "meta": {
+      "query": "As Dr. J Liu, I would utilize the following Google search queries to find the most current and reliable information about the animal host or source of the SARSCoV2 virus:"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.ncbi.nlm.nih.gov/books/NBK554776/": {
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK554776/",
+    "description": "by M Cascella \u00b7 2023 \u00b7 Cited by 6876 \u2014 Coronavirus disease 2019 (COVID-19) is a highly contagious infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).",
+    "snippets": [
+      "by M Cascella \u00b7 2023 \u00b7 Cited by 6876 \u2014 Coronavirus disease 2019 (COVID-19) is a highly contagious infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).",
+      "by M Cascella \u00b7 2023 \u00b7 Cited by 6876 \u2014 A globally dominant D614G variant was eventually identified and associated with increased transmissibility but without the ability to cause severe illness. ..."
+    ],
+    "title": "Features, Evaluation, and Treatment of Coronavirus (COVID-19)",
+    "meta": {
+      "query": "As Dr. J Liu, I would utilize the following Google search queries to find the most current and reliable information about the animal host or source of the SARSCoV2 virus:"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.wordstream.com/blog/ws/2012/12/10/three-types-of-search-queries": {
+    "url": "https://www.wordstream.com/blog/ws/2012/12/10/three-types-of-search-queries",
+    "description": "22 Nov 2023 \u2014 The 3 Types of Search Queries & How You Should Target Them \u00b7 Navigational Search Queries \u00b7 Informational Search Queries \u00b7 Transactional Search ...",
+    "snippets": [
+      "22 Nov 2023 \u2014 The 3 Types of Search Queries & How You Should Target Them \u00b7 Navigational Search Queries \u00b7 Informational Search Queries \u00b7 Transactional Search ..."
+    ],
+    "title": "The 3 Types of Search Queries & How You Should Target ...",
+    "meta": {
+      "query": "Here are the potential search queries:"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.smartinsights.com/paid-search-marketing-ppc/paid-search-strategy/unlocking-ppc-potential-search-query-data/": {
+    "url": "https://www.smartinsights.com/paid-search-marketing-ppc/paid-search-strategy/unlocking-ppc-potential-search-query-data/",
+    "description": "12 Aug 2019 \u2014 Search Query data can help you create a PPC campaign that gets great results. So how can you use it to improve your PPC performance?",
+    "snippets": [
+      "12 Aug 2019 \u2014 Search Query data can help you create a PPC campaign that gets great results. So how can you use it to improve your PPC performance?"
+    ],
+    "title": "Unlocking the PPC potential of search query data",
+    "meta": {
+      "query": "Here are the potential search queries:"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.linkedin.com/pulse/understanding-significance-search-queries-digital-marketing-b73mc?trk=public_post": {
+    "url": "https://www.linkedin.com/pulse/understanding-significance-search-queries-digital-marketing-b73mc?trk=public_post",
+    "description": "Navigational Queries: Users search for a particular website or page, like \"Facebook login page.\" Transactional Queries: Intent here is action- ...",
+    "snippets": [
+      "Navigational Queries: Users search for a particular website or page, like \"Facebook login page.\" Transactional Queries: Intent here is action- ..."
+    ],
+    "title": "Understanding the Significance of Search Queries in ...",
+    "meta": {
+      "query": "Here are the potential search queries:"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC10302237/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10302237/",
+    "description": "by R Pandit \u00b7 2023 \u00b7 Cited by 9 \u2014 In this review, we have discussed the recent SARS-CoV-2 outbreak, potential animal reservoirs, and natural infections in companion and farm animals.",
+    "snippets": [
+      "by R Pandit \u00b7 2023 \u00b7 Cited by 9 \u2014 In this review, we have discussed the recent SARS-CoV-2 outbreak, potential animal reservoirs, and natural infections in companion and farm animals."
+    ],
+    "title": "A SARS-CoV-2: Companion Animal Transmission and ...",
+    "meta": {
+      "query": "query 1: \"SARSCoV2 animal host transmissibility"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC9142586/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9142586/",
+    "description": "by CCS Tan \u00b7 2022 \u00b7 Cited by 130 \u2014 Our findings suggest that minimal adaptation was required for onward transmission in mink and deer following human-to-animal spillover.",
+    "snippets": [
+      "by CCS Tan \u00b7 2022 \u00b7 Cited by 130 \u2014 Our findings suggest that minimal adaptation was required for onward transmission in mink and deer following human-to-animal spillover."
+    ],
+    "title": "Transmission of SARS-CoV-2 from humans to animals and ...",
+    "meta": {
+      "query": "query 1: \"SARSCoV2 animal host transmissibility"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7400078/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7400078/",
+    "description": "by AS Abdel-Moneim \u00b7 2020 \u00b7 Cited by 249 \u2014 SARS-CoV-2 originated from animal reservoir, most likely bats and/or pangolins. Anthroponotic transmission has been reported in cats, dogs, tigers, lions and ...",
+    "snippets": [
+      "by AS Abdel-Moneim \u00b7 2020 \u00b7 Cited by 249 \u2014 SARS-CoV-2 originated from animal reservoir, most likely bats and/or pangolins. Anthroponotic transmission has been reported in cats, dogs, tigers, lions and ..."
+    ],
+    "title": "Evidence for SARS-CoV-2 Infection of Animal Hosts - PMC",
+    "meta": {
+      "query": "animal hosts of sars cov 2"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC9911306/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9911306/",
+    "description": "by Z Klestova \u00b7 2023 \u00b7 Cited by 11 \u2014 SARS-CoV-2 is thought to have originated in bats; however, the intermediate animal sources of this virus are unknown (Shi et al., 2020). Much ...",
+    "snippets": [
+      "by Z Klestova \u00b7 2023 \u00b7 Cited by 11 \u2014 SARS-CoV-2 is thought to have originated in bats; however, the intermediate animal sources of this virus are unknown (Shi et al., 2020). Much ..."
+    ],
+    "title": "Possible spread of SARS-CoV-2 in domestic and wild ...",
+    "meta": {
+      "query": "animal hosts of sars cov 2"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC9959838/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9959838/",
+    "description": "by A Santaniello \u00b7 2023 \u00b7 Cited by 11 \u2014 These diseases can be transmitted in many ways, including animal bites and insect stings, petting, or otherwise coming into contact with sick animals, as well ...",
+    "snippets": [
+      "by A Santaniello \u00b7 2023 \u00b7 Cited by 11 \u2014 These diseases can be transmitted in many ways, including animal bites and insect stings, petting, or otherwise coming into contact with sick animals, as well ..."
+    ],
+    "title": "SARS-CoV-2 Affects Both Humans and Animals",
+    "meta": {
+      "query": "cases of sars cov 2 transmission from animals to humans"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.sciencedirect.com/science/article/pii/S2772985023000546": {
+    "url": "https://www.sciencedirect.com/science/article/pii/S2772985023000546",
+    "description": "by R Fang \u00b7 2024 \u00b7 Cited by 14 \u2014 In most cases, transmission of SARS-CoV-2 to animals is suspected to occur through direct contact with infected humans or asymptomatic carriers [13]. Laboratory ...",
+    "snippets": [
+      "by R Fang \u00b7 2024 \u00b7 Cited by 14 \u2014 In most cases, transmission of SARS-CoV-2 to animals is suspected to occur through direct contact with infected humans or asymptomatic carriers . Laboratory ..."
+    ],
+    "title": "SARS-CoV-2 infection in animals: Patterns, transmission ...",
+    "meta": {
+      "query": "cases of sars cov 2 transmission from animals to humans"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/animals.html": {
+    "url": "https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/animals.html",
+    "description": "7 Apr 2023 \u2014 The risk of animals spreading COVID-19 to people is considered low. There is no evidence that animals play a significant role in spreading SARS-CoV-2.",
+    "snippets": [
+      "7 Apr 2023 \u2014 The risk of animals spreading COVID-19 to people is considered low. There is no evidence that animals play a significant role in spreading SARS-CoV-2."
+    ],
+    "title": "Animals and COVID-19",
+    "meta": {
+      "query": "cases of sars cov 2 transmission from animals to humans"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7594747/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7594747/",
+    "description": "by K Munir \u00b7 2020 \u00b7 Cited by 77 \u2014 SARS-CoV-2 is a zoonotic disease that has crossed species barrier from its reservoir bat host, and infected humans via an unknown intermediate animal species.",
+    "snippets": [
+      "by K Munir \u00b7 2020 \u00b7 Cited by 77 \u2014 SARS-CoV-2 is a zoonotic disease that has crossed species barrier from its reservoir bat host, and infected humans via an unknown intermediate animal species."
+    ],
+    "title": "Zoonotic and reverse zoonotic events of SARS-CoV-2 and ...",
+    "meta": {
+      "query": "sars cov 2 zoonotic transmission"
+    },
+    "citation_uuid": -1
+  },
+  "https://pubmed.ncbi.nlm.nih.gov/32985202/": {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32985202/",
+    "description": "by S Vilcek \u00b7 2020 \u00b7 Cited by 40 \u2014 Further analyses suggested that SARS-CoV-2 is of zoonotic origin. The analysis of the SARS-CoV-2 genome, especially the S gene, shows that natural evolutionary ...",
+    "snippets": [
+      "by S Vilcek \u00b7 2020 \u00b7 Cited by 40 \u2014 Further analyses suggested that SARS-CoV-2 is of zoonotic origin. The analysis of the SARS-CoV-2 genome, especially the S gene, shows that natural evolutionary ..."
+    ],
+    "title": "SARS-CoV-2: Zoonotic origin of pandemic coronavirus",
+    "meta": {
+      "query": "sars cov 2 zoonotic transmission"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7276047/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7276047/",
+    "description": "by P Skums \u00b7 2020 \u00b7 Cited by 25 \u2014 In particular, the virus spread is characterized by multiple introductions of SARS-CoV2 into regions and countries: at this point for 14 out of 34 countries ...",
+    "snippets": [
+      "by P Skums \u00b7 2020 \u00b7 Cited by 25 \u2014 In particular, the virus spread is characterized by multiple introductions of SARS-CoV2 into regions and countries: at this point for 14 out of 34 countries ..."
+    ],
+    "title": "Global transmission network of SARS-CoV-2",
+    "meta": {
+      "query": "Global spread of SARSCoV2"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.nature.com/articles/s41586-021-04188-6": {
+    "url": "https://www.nature.com/articles/s41586-021-04188-6",
+    "description": "by J Li \u00b7 2021 \u00b7 Cited by 399 \u2014 Here we summarize our current understanding of the emergence, global spread and genetic diversity of SARS-CoV-2.",
+    "snippets": [
+      "by J Li \u00b7 2021 \u00b7 Cited by 399 \u2014 Here we summarize our current understanding of the emergence, global spread and genetic diversity of SARS-CoV-2."
+    ],
+    "title": "The emergence, genomic diversity and global spread of ...",
+    "meta": {
+      "query": "Global spread of SARSCoV2"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.who.int/activities/tracking-SARS-CoV-2-variants": {
+    "url": "https://www.who.int/activities/tracking-SARS-CoV-2-variants",
+    "description": "... SARS-CoV-2 continues to circulate at high levels around the world. While monitoring the circulation of SARS-CoV-2 globally, it also remains essential to ...",
+    "snippets": [
+      "... SARS-CoV-2 continues to circulate at high levels around the world. While monitoring the circulation of SARS-CoV-2 globally, it also remains essential to ..."
+    ],
+    "title": "Tracking SARS-CoV-2 variants",
+    "meta": {
+      "query": "Global spread of SARSCoV2"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC8618472/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8618472/",
+    "description": "by S Kubik \u00b7 2021 \u00b7 Cited by 18 \u2014 Here, the emergence patterns of Spike mutations were investigated in sequences deposited in local and global databases to identify mutational hotspots across ...",
+    "snippets": [
+      "by S Kubik \u00b7 2021 \u00b7 Cited by 18 \u2014 Here, the emergence patterns of Spike mutations were investigated in sequences deposited in local and global databases to identify mutational hotspots across ..."
+    ],
+    "title": "Mutational Hotspot in the SARS-CoV-2 Spike Protein N- ...",
+    "meta": {
+      "query": "Current SARSCoV2 hotspots"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.nature.com/articles/s41598-021-01655-y": {
+    "url": "https://www.nature.com/articles/s41598-021-01655-y",
+    "description": "by MR Rahbar \u00b7 2021 \u00b7 Cited by 14 \u2014 Our focus on three hotspots of RBM, namely F486SARS-CoV-2, Q493SARS-CoV-2, and N501SARS-CoV-2, surmises the overall conserved physicochemical ...",
+    "snippets": [
+      "by MR Rahbar \u00b7 2021 \u00b7 Cited by 14 \u2014 Our focus on three hotspots of RBM, namely F486SARS-CoV-2, Q493SARS-CoV-2, and N501SARS-CoV-2, surmises the overall conserved physicochemical ..."
+    ],
+    "title": "Hotspots for mutations in the SARS-CoV-2 spike glycoprotein",
+    "meta": {
+      "query": "Current SARSCoV2 hotspots"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.sciencedirect.com/science/article/pii/S2001037024003519": {
+    "url": "https://www.sciencedirect.com/science/article/pii/S2001037024003519",
+    "description": "by V Barozi \u00b7 2024 \u00b7 Cited by 4 \u2014 A recent study on SARS-CoV-2 suggested that there is a physical interaction of residues H163, S147, L115, and S10, which have low mutation tolerance and form a ...",
+    "snippets": [
+      "by V Barozi \u00b7 2024 \u00b7 Cited by 4 \u2014 A recent study on SARS-CoV-2 suggested that there is a physical interaction of residues H163, S147, L115, and S10, which have low mutation tolerance and form a ..."
+    ],
+    "title": "Revealing SARS-CoV-2 Mpro mutation cold and hot spots",
+    "meta": {
+      "query": "Current SARSCoV2 hotspots"
+    },
+    "citation_uuid": -1
+  },
+  "https://en.wikipedia.org/wiki/COVID-19_pandemic": {
+    "url": "https://en.wikipedia.org/wiki/COVID-19_pandemic",
+    "description": "The first known outbreak (the 2019\u20132020 COVID-19 outbreak in mainland China) started in Wuhan, Hubei, China, in December 2019.",
+    "snippets": [
+      "Transmission of the virus is often through airborne particles. Mutations have produced many strains (variants) with varying degrees of infectivity and virulence ...",
+      "The first known outbreak (the 2019\u20132020 COVID-19 outbreak in mainland China) started in Wuhan, Hubei, China, in December 2019. Many early cases were ...",
+      "The first known outbreak (the 2019\u20132020 COVID-19 outbreak in mainland China) started in Wuhan, Hubei, China, in December 2019."
+    ],
+    "title": "COVID-19 pandemic",
+    "meta": {
+      "query": "Notable Covid19 outbreaks since 2020"
+    },
+    "citation_uuid": -1
+  },
+  "https://en.wikipedia.org/wiki/COVID-19": {
+    "url": "https://en.wikipedia.org/wiki/COVID-19",
+    "description": "Several notable variants of SARS-CoV-2 emerged throughout 2020. Cluster 5 emerged among minks and mink farmers in Denmark. After strict ...",
+    "snippets": [
+      "The first known case was identified in Wuhan, China, in December 2019. Most scientists believe that the SARS-CoV-2 virus entered into human populations ...",
+      "Several notable variants of SARS-CoV-2 emerged throughout 2020. Cluster 5 emerged among minks and mink farmers in Denmark. After strict ...",
+      "There are three types of transmission: \"droplet\" and \"contact\", which are associated with large droplets, and \"airborne\", which is associated with small ...",
+      "The first known case was identified in Wuhan, China, in December 2019."
+    ],
+    "title": "Covid-19",
+    "meta": {
+      "query": "Notable Covid19 outbreaks since 2020"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7153464/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7153464/",
+    "description": "by YC Wu \u00b7 2020 \u00b7 Cited by 2555 \u2014 The first case reported in our country was on January 21, 2019. As of February 6, 2020, a total of 28,276 confirmed cases with 565 deaths globally were ...",
+    "snippets": [
+      "by YC Wu \u00b7 2020 \u00b7 Cited by 2555 \u2014 The illness onset of the first laboratory-confirmed case of 2019-nCoV infection was on December 1, 2019 in Wuhan, China (Table 1). Initially, an outbreak ...",
+      "by YC Wu \u00b7 2020 \u00b7 Cited by 2555 \u2014 The first case reported in our country was on January 21, 2019. As of February 6, 2020, a total of 28,276 confirmed cases with 565 deaths globally were ..."
+    ],
+    "title": "The outbreak of COVID-19: An overview - PMC",
+    "meta": {
+      "query": "first reported Covid 19 cases characteristics vs later outbreaks"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.nature.com/articles/s41579-020-00459-7": {
+    "url": "https://www.nature.com/articles/s41579-020-00459-7",
+    "description": "by B Hu \u00b7 2021 \u00b7 Cited by 6477 \u2014 The first recorded cases were reported in December 2019 in Wuhan, China. ... Multiple organ failure has also been reported in some COVID-19 cases.",
+    "snippets": [
+      "by B Hu \u00b7 2021 \u00b7 Cited by 6477 \u2014 This comprehensive Review covers the basic biology of SARS-CoV-2, including the genetic characteristics, the potential zoonotic origin and its receptor binding.",
+      "by B Hu \u00b7 2021 \u00b7 Cited by 6477 \u2014 The first recorded cases were reported in December 2019 in Wuhan, China. ... Multiple organ failure has also been reported in some COVID-19 cases.",
+      "by B Hu \u00b7 2021 \u00b7 Cited by 6477 \u2014 Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is a highly transmissible and pathogenic coronavirus that emerged in late 2019 ..."
+    ],
+    "title": "Characteristics of SARS-CoV-2 and COVID-19",
+    "meta": {
+      "query": "first reported Covid 19 cases characteristics vs later outbreaks"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7068164/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7068164/",
+    "description": "by G Spiteri \u00b7 2020 \u00b7 Cited by 789 \u2014 As at 09:00 on 21 February 2020, 47 confirmed cases of COVID-19 were reported in the WHO European Region and one of these cases had died [4].",
+    "snippets": [
+      "by G Spiteri \u00b7 2020 \u00b7 Cited by 789 \u2014 As at 21 February, nine European countries reported 47 cases. Among 38 cases studied, 21 were linked to two clusters in Germany and France, 14 were infected in ...",
+      "by G Spiteri \u00b7 2020 \u00b7 Cited by 789 \u2014 Here we describe the epidemiology of the first cases of COVID-19 in this region, excluding cases reported in the United Kingdom (UK), as at 21 February 2020.",
+      "by G Spiteri \u00b7 2020 \u00b7 Cited by 789 \u2014 As at 09:00 on 21 February 2020, 47 confirmed cases of COVID-19 were reported in the WHO European Region and one of these cases had died ."
+    ],
+    "title": "First cases of coronavirus disease 2019 (COVID-19) in the ...",
+    "meta": {
+      "query": "first reported Covid 19 cases characteristics vs later outbreaks"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.mayoclinic.org/diseases-conditions/coronavirus/symptoms-causes/syc-20479963": {
+    "url": "https://www.mayoclinic.org/diseases-conditions/coronavirus/symptoms-causes/syc-20479963",
+    "description": "20 Sept 2024 \u2014 Coronavirus disease 2019 (COVID-19) is an illness caused by the virus SARS-CoV-2. Learn more about the symptoms, risks and ways to protect ...",
+    "snippets": [
+      "20 Sept 2024 \u2014 Coronavirus disease 2019 (COVID-19) is an illness caused by the virus SARS-CoV-2. Learn more about the symptoms, risks and ways to protect ..."
+    ],
+    "title": "Coronavirus disease 2019 (COVID-19)",
+    "meta": {
+      "query": "first reported cases of Covid 19 symptoms"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7530459/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7530459/",
+    "description": "by MA Andrews \u00b7 2020 \u00b7 Cited by 778 \u2014 The most common clinical features of the early clinical cases from Wuhan, China, were fever (98.6%), fatigue (69.6%) and dry cough (59.4%)4. The second meeting ...",
+    "snippets": [
+      "by MA Andrews \u00b7 2020 \u00b7 Cited by 778 \u2014 The most common clinical features of the early clinical cases from Wuhan, China, were fever (98.6%), fatigue (69.6%) and dry cough (59.4%)4. The second meeting ...",
+      "by MA Andrews \u00b7 2020 \u00b7 Cited by 778 \u2014 We present here the first case of COVID-19 infection reported in Kerala, India. On January 27, 2020, a 20 yr old female presented to the Emergency Department ..."
+    ],
+    "title": "First confirmed case of COVID-19 infection in India",
+    "meta": {
+      "query": "first reported cases of Covid 19 symptoms"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7356953/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7356953/",
+    "description": "by J Baj \u00b7 2020 \u00b7 Cited by 559 \u2014 The first report of skin involvement in COVID-19 patients was observed in the form of an erythematous rash, widespread urticaria, and chickenpox-like vesicles, ...",
+    "snippets": [
+      "by J Baj \u00b7 2020 \u00b7 Cited by 559 \u2014 The first report of skin involvement in COVID-19 patients was observed in the form of an erythematous rash, widespread urticaria, and chickenpox-like vesicles, ..."
+    ],
+    "title": "COVID-19: Specific and Non-Specific Clinical ...",
+    "meta": {
+      "query": "first reported cases of Covid 19 symptoms"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.who.int/news-room/commentaries/detail/modes-of-transmission-of-virus-causing-covid-19-implications-for-ipc-precaution-recommendations": {
+    "url": "https://www.who.int/news-room/commentaries/detail/modes-of-transmission-of-virus-causing-covid-19-implications-for-ipc-precaution-recommendations",
+    "description": "29 Mar 2020 \u2014 According to current evidence, COVID-19 virus is primarily transmitted between people through respiratory droplets and contact routes.",
+    "snippets": [
+      "29 Mar 2020 \u2014 According to current evidence, COVID-19 virus is primarily transmitted between people through respiratory droplets and contact routes."
+    ],
+    "title": "Modes of transmission of virus causing COVID-19",
+    "meta": {
+      "query": "early transmission routes of Covid 19"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC8087584/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8087584/",
+    "description": "by A Bak \u00b7 2021 \u00b7 Cited by 59 \u2014 This guidance article describes routes of SARS-CoV-2 transmission, which will allow the public and healthcare professionals to understand how SARS-CoV-2 ...",
+    "snippets": [
+      "by A Bak \u00b7 2021 \u00b7 Cited by 59 \u2014 This guidance article describes routes of SARS-CoV-2 transmission, which will allow the public and healthcare professionals to understand how SARS-CoV-2 ..."
+    ],
+    "title": "SARS-CoV-2 routes of transmission and recommendations ...",
+    "meta": {
+      "query": "early transmission routes of Covid 19"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.sciencedirect.com/science/article/pii/S2405857220300747": {
+    "url": "https://www.sciencedirect.com/science/article/pii/S2405857220300747",
+    "description": "by HS Rahman \u00b7 2020 \u00b7 Cited by 180 \u2014 It is concluded that COVID-19 is primarily transmitted human-to-human via oral and respiratory aerosols and droplets with the virus-contaminated environment ...",
+    "snippets": [
+      "by HS Rahman \u00b7 2020 \u00b7 Cited by 180 \u2014 It is concluded that COVID-19 is primarily transmitted human-to-human via oral and respiratory aerosols and droplets with the virus-contaminated environment ..."
+    ],
+    "title": "The transmission modes and sources of COVID-19",
+    "meta": {
+      "query": "early transmission routes of Covid 19"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7461745/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7461745/",
+    "description": "by R Karia \u00b7 2020 \u00b7 Cited by 319 \u2014 SARS-CoV-2 is thought to commonly spread via respiratory droplets formed while talking, coughing, and sneezing of an infected person.",
+    "snippets": [
+      "by R Karia \u00b7 2020 \u00b7 Cited by 319 \u2014 SARS-CoV-2 is thought to commonly spread via respiratory droplets formed while talking, coughing, and sneezing of an infected person."
+    ],
+    "title": "COVID-19 and its Modes of Transmission - PMC",
+    "meta": {
+      "query": "primary modes of Covid 19 transmission"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7484735/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7484735/",
+    "description": "by HS Rahman \u00b7 2020 \u00b7 Cited by 180 \u2014 It is concluded that COVID-19 is primarily transmitted human-to-human via oral and respiratory aerosols and droplets with the virus-contaminated environment ...",
+    "snippets": [
+      "by HS Rahman \u00b7 2020 \u00b7 Cited by 180 \u2014 It is concluded that COVID-19 is primarily transmitted human-to-human via oral and respiratory aerosols and droplets with the virus-contaminated environment ..."
+    ],
+    "title": "The transmission modes and sources of COVID-19",
+    "meta": {
+      "query": "modes of transmission for Covid 19 in 20192020"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.nature.com/articles/s41579-020-00468-6": {
+    "url": "https://www.nature.com/articles/s41579-020-00468-6",
+    "description": "by P V\u2019kovski \u00b7 2021 \u00b7 Cited by 3702 \u2014 In this Review, we summarize the first discoveries that shape our current understanding of SARS-CoV-2 infection throughout the intracellular viral life cycle.",
+    "snippets": [
+      "by P V\u2019kovski \u00b7 2021 \u00b7 Cited by 3702 \u2014 In this Review, we summarize the first discoveries that shape our current understanding of SARS-CoV-2 infection throughout the intracellular viral life cycle."
+    ],
+    "title": "Coronavirus biology and replication: implications for SARS ...",
+    "meta": {
+      "query": "SARSCoV2 virus properties and pandemic implications"
+    },
+    "citation_uuid": -1
+  },
+  "https://en.wikipedia.org/wiki/SARS-CoV-2": {
+    "url": "https://en.wikipedia.org/wiki/SARS-CoV-2",
+    "description": "SARS\u2011CoV\u20112 is a strain of the species Betacoronavirus pandemicum (SARSr-CoV), as is SARS-CoV-1, the virus that caused the 2002\u20132004 SARS outbreak.",
+    "snippets": [
+      "SARS\u2011CoV\u20112 is a positive-sense single-stranded RNA virus that is contagious in humans.",
+      "SARS\u2011CoV\u20112 is a strain of the species Betacoronavirus pandemicum (SARSr-CoV), as is SARS-CoV-1, the virus that caused the 2002\u20132004 SARS outbreak."
+    ],
+    "title": "SARS-CoV-2",
+    "meta": {
+      "query": "SARSCoV2 virus properties and pandemic implications"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC8470303/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8470303/",
+    "description": "by HN Sharma \u00b7 2021 \u00b7 Cited by 13 \u2014 This review is based on the analysis of 210 published works, and it attempts to cover the basic biology of coronaviruses, including the genetic characteristics, ...",
+    "snippets": [
+      "by HN Sharma \u00b7 2021 \u00b7 Cited by 13 \u2014 This review is based on the analysis of 210 published works, and it attempts to cover the basic biology of coronaviruses, including the genetic characteristics, ..."
+    ],
+    "title": "Biology and Pathogenesis of SARS-CoV-2 - PubMed Central",
+    "meta": {
+      "query": "SARSCoV2 pathogenicity and biological characteristics early research"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.nature.com/articles/s41579-022-00713-0": {
+    "url": "https://www.nature.com/articles/s41579-022-00713-0",
+    "description": "by MM Lamers \u00b7 2022 \u00b7 Cited by 1011 \u2014 In this Review, we explore recent clinical and experimental advances regarding SARS-CoV-2 pathophysiology and discuss potential mechanisms behind SARS-CoV-2- ...",
+    "snippets": [
+      "by MM Lamers \u00b7 2022 \u00b7 Cited by 1011 \u2014 In this Review, we explore recent clinical and experimental advances regarding SARS-CoV-2 pathophysiology and discuss potential mechanisms behind SARS-CoV-2- ..."
+    ],
+    "title": "SARS-CoV-2 pathogenesis | Nature Reviews Microbiology",
+    "meta": {
+      "query": "SARSCoV2 pathogenicity and biological characteristics early research"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7158569/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7158569/",
+    "description": "by AJ Kucharski \u00b7 2020 \u00b7 Cited by 3231 \u2014 An outbreak of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) has led to 95 333 confirmed cases as of March 5, 2020. Understanding the early ...",
+    "snippets": [
+      "by AJ Kucharski \u00b7 2020 \u00b7 Cited by 3231 \u2014 An outbreak of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) has led to 95 333 confirmed cases as of March 5, 2020. Understanding the early ..."
+    ],
+    "title": "Early dynamics of transmission and control of COVID-19",
+    "meta": {
+      "query": "Early research findings on SARSCoV2 transmission and disease severity"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.sciencedirect.com/science/article/pii/S1473309920301444": {
+    "url": "https://www.sciencedirect.com/science/article/pii/S1473309920301444",
+    "description": "by AJ Kucharski \u00b7 2020 \u00b7 Cited by 3231 \u2014 Our results show that COVID-19 transmission probably declined in Wuhan during late January, 2020, coinciding with the introduction of travel control measures.",
+    "snippets": [
+      "by AJ Kucharski \u00b7 2020 \u00b7 Cited by 3231 \u2014 Our results show that COVID-19 transmission probably declined in Wuhan during late January, 2020, coinciding with the introduction of travel control measures."
+    ],
+    "title": "Early dynamics of transmission and control of COVID-19",
+    "meta": {
+      "query": "Early research findings on SARSCoV2 transmission and disease severity"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7429938/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7429938/",
+    "description": "by LS Rains \u00b7 2020 \u00b7 Cited by 242 \u2014 The COVID-19 pandemic has many potential impacts on people with mental health conditions and on mental health care, including direct consequences of ...",
+    "snippets": [
+      "by LS Rains \u00b7 2020 \u00b7 Cited by 242 \u2014 The COVID-19 pandemic has many potential impacts on people with mental health conditions and on mental health care, including direct consequences of ..."
+    ],
+    "title": "Early impacts of the COVID-19 pandemic on mental ...",
+    "meta": {
+      "query": "impact of early research findings on Covid 19 pandemic response"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7463185/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7463185/",
+    "description": "by JA Singh \u00b7 2020 \u00b7 Cited by 81 \u2014 We highlight some of the effects of the COVID-19 pandemic on other ongoing research projects that are unrelated to COVID-19 and provide practical guidance.",
+    "snippets": [
+      "by JA Singh \u00b7 2020 \u00b7 Cited by 81 \u2014 We highlight some of the effects of the COVID-19 pandemic on other ongoing research projects that are unrelated to COVID-19 and provide practical guidance."
+    ],
+    "title": "The impact of the COVID-19 pandemic response on other ...",
+    "meta": {
+      "query": "impact of early research findings on Covid 19 pandemic response"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.sciencedirect.com/science/article/pii/S1462901121001684": {
+    "url": "https://www.sciencedirect.com/science/article/pii/S1462901121001684",
+    "description": "by W Leal Filho \u00b7 2021 \u00b7 Cited by 23 \u2014 This paper examines the extent to which COVID-19 has influenced climate change research worldwide during the first wave at the beginning of 2020.",
+    "snippets": [
+      "by W Leal Filho \u00b7 2021 \u00b7 Cited by 23 \u2014 This paper examines the extent to which COVID-19 has influenced climate change research worldwide during the first wave at the beginning of 2020."
+    ],
+    "title": "The impacts of the early outset of the COVID-19 pandemic ...",
+    "meta": {
+      "query": "impact of early research findings on Covid 19 pandemic response"
+    },
+    "citation_uuid": -1
+  },
+  "https://virologyj.biomedcentral.com/articles/10.1186/s12985-020-01369-z": {
+    "url": "https://virologyj.biomedcentral.com/articles/10.1186/s12985-020-01369-z",
+    "description": "by Y Yang \u00b7 2020 \u00b7 Cited by 202 \u2014 SARS-CoV-2 infection causes systemic and respiratory symptoms such as fever, muscle soreness, cough, and dyspnea. Guan et al. [30] collected ...",
+    "snippets": [
+      "by Y Yang \u00b7 2020 \u00b7 Cited by 202 \u2014 SARS-CoV-2 infection causes systemic and respiratory symptoms such as fever, muscle soreness, cough, and dyspnea. Guan et al.  collected ..."
+    ],
+    "title": "SARS-CoV-2: characteristics and current advances in ...",
+    "meta": {
+      "query": "characteristics of the SARSCoV2 virus"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.nature.com/articles/s41580-021-00418-x": {
+    "url": "https://www.nature.com/articles/s41580-021-00418-x",
+    "description": "by CB Jackson \u00b7 2022 \u00b7 Cited by 3053 \u2014 This Review provides the structural and cellular foundations for understanding the multistep SARS-CoV-2 entry process.",
+    "snippets": [
+      "by CB Jackson \u00b7 2022 \u00b7 Cited by 3053 \u2014 This Review provides the structural and cellular foundations for understanding the multistep SARS-CoV-2 entry process."
+    ],
+    "title": "Mechanisms of SARS-CoV-2 entry into cells",
+    "meta": {
+      "query": "early research SARSCoV2 pathogenicity"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC8311250/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8311250/",
+    "description": "by C Li \u00b7 2021 \u00b7 Cited by 86 \u2014 It is widely accepted that human CoV transmissibility and pathogenesis primarily depends on the interactions between the virus and specific host cells (46,51).",
+    "snippets": [
+      "by C Li \u00b7 2021 \u00b7 Cited by 86 \u2014 It is widely accepted that human CoV transmissibility and pathogenesis primarily depends on the interactions between the virus and specific host cells (46,51)."
+    ],
+    "title": "Overview of the pathogenesis of COVID-19 (Review) - PMC",
+    "meta": {
+      "query": "early research SARSCoV2 pathogenicity"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7775067/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7775067/",
+    "description": "by Y Feng \u00b7 2020 \u00b7 Cited by 37 \u2014 According to the WHO, the infection is mainly transmitted through contact with respiratory droplets that are generally caused by short social distance [19]; ...",
+    "snippets": [
+      "by Y Feng \u00b7 2020 \u00b7 Cited by 37 \u2014 According to the WHO, the infection is mainly transmitted through contact with respiratory droplets that are generally caused by short social distance ; ..."
+    ],
+    "title": "Spatiotemporal spread pattern of the COVID-19 cases in ...",
+    "meta": {
+      "query": "how covid19 spread to China"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.clinmedjournals.org/articles/jide/journal-of-infectious-diseases-and-epidemiology-jide-6-146.php?jid=jide": {
+    "url": "https://www.clinmedjournals.org/articles/jide/journal-of-infectious-diseases-and-epidemiology-jide-6-146.php?jid=jide",
+    "description": "Coronavirus disease 19 (COVID-19), originated at Wuhan city of China in early December 2019 has rapidly widespread with confirmed cases in almost every country ...",
+    "snippets": [
+      "Coronavirus disease 19 (COVID-19), originated at Wuhan city of China in early December 2019 has rapidly widespread with confirmed cases in almost every country ..."
+    ],
+    "title": "COVID-19: An Insight into SARS-CoV-2 Pandemic ...",
+    "meta": {
+      "query": "how covid19 spread to China"
+    },
+    "citation_uuid": -1
+  },
+  "https://en.wikipedia.org/wiki/COVID-19_pandemic_in_mainland_China": {
+    "url": "https://en.wikipedia.org/wiki/COVID-19_pandemic_in_mainland_China",
+    "description": "On 8 January 2020, a new coronavirus (SARS-CoV-2) was identified as the cause of the pneumonia by Chinese scientists. By 29 January, the virus was found to have ...",
+    "snippets": [
+      "On 8 January 2020, a new coronavirus (SARS-CoV-2) was identified as the cause of the pneumonia by Chinese scientists. By 29 January, the virus was found to have ..."
+    ],
+    "title": "COVID-19 pandemic in mainland China",
+    "meta": {
+      "query": "how covid19 spread to China"
+    },
+    "citation_uuid": -1
+  },
+  "https://en.wikipedia.org/wiki/Chinese_government_response_to_COVID-19": {
+    "url": "https://en.wikipedia.org/wiki/Chinese_government_response_to_COVID-19",
+    "description": "On 23 January 2020, the Chinese government banned travel to and from Wuhan, enforced strict quarantines in affected regions and initiated a national response.",
+    "snippets": [
+      "On 23 January 2020, the Chinese government banned travel to and from Wuhan, enforced strict quarantines in affected regions and initiated a national response."
+    ],
+    "title": "Chinese government response to COVID-19",
+    "meta": {
+      "query": "Covid19 Wuhan outbreak response"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.who.int/news/item/27-04-2020-who-timeline---covid-19": {
+    "url": "https://www.who.int/news/item/27-04-2020-who-timeline---covid-19",
+    "description": "27 Apr 2020 \u2014 WHO reported on social media that there was a cluster of pneumonia cases \u2013 with no deaths \u2013 in Wuhan, Hubei province. 5 January 2020. WHO ...",
+    "snippets": [
+      "27 Apr 2020 \u2014 WHO reported on social media that there was a cluster of pneumonia cases \u2013 with no deaths \u2013 in Wuhan, Hubei province. 5 January 2020. WHO ..."
+    ],
+    "title": "Archived: WHO Timeline - COVID-19",
+    "meta": {
+      "query": "Covid19 Wuhan outbreak response"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC9874793/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9874793/",
+    "description": "by YJ Hao \u00b7 2022 \u00b7 Cited by 88 \u2014 We believe the coronavirus was originally transmitted to human by animals rather than by a laboratory leak.",
+    "snippets": [
+      "by YJ Hao \u00b7 2022 \u00b7 Cited by 88 \u2014 We believe the coronavirus was originally transmitted to human by animals rather than by a laboratory leak."
+    ],
+    "title": "The origins of COVID\u201019 pandemic: A brief overview - PMC",
+    "meta": {
+      "query": "origin of Covid19"
+    },
+    "citation_uuid": -1
+  },
+  "https://en.wikipedia.org/wiki/Origin_of_SARS-CoV-2": {
+    "url": "https://en.wikipedia.org/wiki/Origin_of_SARS-CoV-2",
+    "description": "The virus was derived from a bat-borne virus and most likely was transmitted to humans via another animal in nature, or during wildlife bushmeat trade.",
+    "snippets": [
+      "The virus was derived from a bat-borne virus and most likely was transmitted to humans via another animal in nature, or during wildlife bushmeat trade."
+    ],
+    "title": "Origin of SARS-CoV-2",
+    "meta": {
+      "query": "origin of Covid19"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.webmd.com/covid/coronavirus-history": {
+    "url": "https://www.webmd.com/covid/coronavirus-history",
+    "description": "21 Nov 2023 \u2014 The virus that causes COVID-19 was a novel coronavirus, meaning it had never infected humans. The virus was discovered in Wuhan, China, in 2019 ...",
+    "snippets": [
+      "21 Nov 2023 \u2014 The virus that causes COVID-19 was a novel coronavirus, meaning it had never infected humans. The virus was discovered in Wuhan, China, in 2019 ..."
+    ],
+    "title": "Coronavirus History: How Did Coronavirus Start?",
+    "meta": {
+      "query": "origin of Covid19"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/who-response-in-countries": {
+    "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/who-response-in-countries",
+    "description": "Find out about our actions behind the scenes and in countries across the world on prevention, surveillance, containment, treatment, coordination and much more.",
+    "snippets": [
+      "Find out about our actions behind the scenes and in countries across the world on prevention, surveillance, containment, treatment, coordination and much more."
+    ],
+    "title": "How is WHO responding to COVID-19",
+    "meta": {
+      "query": "WHO global response COVID19"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/interactive-timeline": {
+    "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/interactive-timeline",
+    "description": "Use our interactive timeline mapping WHO's COVID-19 response against global case numbers to see how WHO has taken action, using filters for information, ...",
+    "snippets": [
+      "Use our interactive timeline mapping WHO's COVID-19 response against global case numbers to see how WHO has taken action, using filters for information, ..."
+    ],
+    "title": "Timeline of WHO's response to COVID-19",
+    "meta": {
+      "query": "WHO global response COVID19"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.un.org/en/coronavirus": {
+    "url": "https://www.un.org/en/coronavirus",
+    "description": "5 May 2023 - The head of the UN World Health Organization (WHO) has declared \u201cwith great hope\u201d an end to COVID-19 as a public health emergency, stressing that ...",
+    "snippets": [
+      "5 May 2023 - The head of the UN World Health Organization (WHO) has declared \u201cwith great hope\u201d an end to COVID-19 as a public health emergency, stressing that ..."
+    ],
+    "title": "COVID-19 Response",
+    "meta": {
+      "query": "WHO global response COVID19"
+    },
+    "citation_uuid": -1
+  },
+  "https://en.wikipedia.org/wiki/World_Health_Organization_response_to_the_COVID-19_pandemic": {
+    "url": "https://en.wikipedia.org/wiki/World_Health_Organization_response_to_the_COVID-19_pandemic",
+    "description": "On 20 January, the WHO confirmed human-to-human transmission of the disease. On 30 January, the WHO declared the outbreak a Public Health Emergency of ...",
+    "snippets": [
+      "On 20 January, the WHO confirmed human-to-human transmission of the disease. On 30 January, the WHO declared the outbreak a Public Health Emergency of ...",
+      "The World Health Organization (WHO) is a leading organisation involved in the global coordination for mitigating the COVID-19 pandemic"
+    ],
+    "title": "World Health Organization response to the COVID-19 ...",
+    "meta": {
+      "query": "WHO actions during COVID19 pandemic"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/donors-and-partners/funding": {
+    "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/donors-and-partners/funding",
+    "description": "To date, in response to COVID-19 WHO has released US$10mil for urgent preparedness and response activities globally. Total CFE contributions can be found here.",
+    "snippets": [
+      "To date, in response to COVID-19 WHO has released US$10mil for urgent preparedness and response activities globally. Total CFE contributions can be found here."
+    ],
+    "title": "COVID-19 Response Fund",
+    "meta": {
+      "query": "WHO coordination efforts COVID19"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.unesco.org/en/articles/culture-and-pandemic-what-was-impact-crisis-creative-industries": {
+    "url": "https://www.unesco.org/en/articles/culture-and-pandemic-what-was-impact-crisis-creative-industries",
+    "description": "20 Apr 2023 \u2014 The unprecedented outbreak of the pandemic around the world hit hard the cultural and creative sector, especially in Latin America and the Caribbean.",
+    "snippets": [
+      "20 Apr 2023 \u2014 The unprecedented outbreak of the pandemic around the world hit hard the cultural and creative sector, especially in Latin America and the Caribbean."
+    ],
+    "title": "Culture and the pandemic: what was the impact of the crisis ...",
+    "meta": {
+      "query": "COVID19 pandemic effect on culture"
+    },
+    "citation_uuid": -1
+  },
+  "https://en.wikipedia.org/wiki/Impact_of_the_COVID-19_pandemic_on_the_arts_and_cultural_heritage": {
+    "url": "https://en.wikipedia.org/wiki/Impact_of_the_COVID-19_pandemic_on_the_arts_and_cultural_heritage",
+    "description": "The COVID-19 pandemic had a sudden and substantial impact on the arts and cultural heritage sector. The global health crisis and the uncertainty resulting from ...",
+    "snippets": [
+      "The COVID-19 pandemic had a sudden and substantial impact on the arts and cultural heritage sector. The global health crisis and the uncertainty resulting from ..."
+    ],
+    "title": "Impact of the COVID-19 pandemic on the arts and cultural ...",
+    "meta": {
+      "query": "COVID19 pandemic effect on culture"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC8867451/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8867451/",
+    "description": "by Y Chen \u00b7 2022 \u00b7 Cited by 40 \u2014 This study reveals that individualism, masculinity, and uncertainty avoidance have a positive impact on confirmed COVID-19 cases.",
+    "snippets": [
+      "by Y Chen \u00b7 2022 \u00b7 Cited by 40 \u2014 This study reveals that individualism, masculinity, and uncertainty avoidance have a positive impact on confirmed COVID-19 cases."
+    ],
+    "title": "Impact of national culture on the severity of the COVID-19 ...",
+    "meta": {
+      "query": "COVID19 pandemic effect on culture"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.worldbank.org/en/publication/wdr2022/brief/chapter-1-introduction-the-economic-impacts-of-the-covid-19-crisis": {
+    "url": "https://www.worldbank.org/en/publication/wdr2022/brief/chapter-1-introduction-the-economic-impacts-of-the-covid-19-crisis",
+    "description": "The COVID-19 pandemic sent shock waves through the world economy and triggered the largest global economic crisis in more than a century.",
+    "snippets": [
+      "The COVID-19 pandemic sent shock waves through the world economy and triggered the largest global economic crisis in more than a century."
+    ],
+    "title": "Chapter 1. The economic impacts of the COVID-19 crisis",
+    "meta": {
+      "query": "COVID19 pandemic impact on economy"
+    },
+    "citation_uuid": -1
+  },
+  "https://en.wikipedia.org/wiki/Economic_impact_of_the_COVID-19_pandemic": {
+    "url": "https://en.wikipedia.org/wiki/Economic_impact_of_the_COVID-19_pandemic",
+    "description": "The pandemic affected worldwide economic activity, resulting in a 7% drop in global commercial commerce in 2020. Several demand and supply mismatches caused by ...",
+    "snippets": [
+      "The pandemic affected worldwide economic activity, resulting in a 7% drop in global commercial commerce in 2020. Several demand and supply mismatches caused by ..."
+    ],
+    "title": "Economic impact of the COVID-19 pandemic",
+    "meta": {
+      "query": "COVID19 pandemic impact on economy"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.sciencedirect.com/science/article/pii/S0264999323003632": {
+    "url": "https://www.sciencedirect.com/science/article/pii/S0264999323003632",
+    "description": "by W McKibbin \u00b7 2023 \u00b7 Cited by 86 \u2014 The global losses varied between US$ 283 billion and US$ 1.9 trillion in 2020. The real GDP reductions from a counterfactual baseline ranged between 0.1 and 6 ...",
+    "snippets": [
+      "by W McKibbin \u00b7 2023 \u00b7 Cited by 86 \u2014 The global losses varied between US$ 283 billion and US$ 1.9 trillion in 2020. The real GDP reductions from a counterfactual baseline ranged between 0.1 and 6 ..."
+    ],
+    "title": "The global economic impacts of the COVID-19 pandemic",
+    "meta": {
+      "query": "COVID19 pandemic impact on economy"
+    },
+    "citation_uuid": -1
+  },
+  "https://social.desa.un.org/everyone-included-social-impact-of-covid-19": {
+    "url": "https://social.desa.un.org/everyone-included-social-impact-of-covid-19",
+    "description": "People without access to running water, refugees, migrants, or displaced persons also stand to suffer disproportionately both from the pandemic and its ...",
+    "snippets": [
+      "People without access to running water, refugees, migrants, or displaced persons also stand to suffer disproportionately both from the pandemic and its ..."
+    ],
+    "title": "Everyone Included: Social Impact of COVID-19",
+    "meta": {
+      "query": "Societal changes due to COVID19"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC8060536/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8060536/",
+    "description": "by A Ventriglio \u00b7 2021 \u00b7 Cited by 17 \u2014 Coronavirus disease (COVID-19) has been one of the most powerful and lasting realities of 2020. Its impact at social and personal levels cannot be understated.",
+    "snippets": [
+      "by A Ventriglio \u00b7 2021 \u00b7 Cited by 17 \u2014 Coronavirus disease (COVID-19) has been one of the most powerful and lasting realities of 2020. Its impact at social and personal levels cannot be understated."
+    ],
+    "title": "Personal and social changes in the time of COVID-19 - PMC",
+    "meta": {
+      "query": "Societal changes due to COVID19"
+    },
+    "citation_uuid": -1
+  },
+  "https://en.wikipedia.org/wiki/Social_impact_of_the_COVID-19_pandemic": {
+    "url": "https://en.wikipedia.org/wiki/Social_impact_of_the_COVID-19_pandemic",
+    "description": "According to data released by UNESCO on 25 March, school and university closures due to COVID-19 were implemented nationwide in 165 countries. Including ...",
+    "snippets": [
+      "According to data released by UNESCO on 25 March, school and university closures due to COVID-19 were implemented nationwide in 165 countries. Including ..."
+    ],
+    "title": "Social impact of the COVID-19 pandemic",
+    "meta": {
+      "query": "Societal changes due to COVID19"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7912626/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7912626/",
+    "description": "by AO Oyewole \u00b7 2021 \u00b7 Cited by 30 \u2014 Diagnostic testing remains the backbone of the coronavirus disease 2019 (COVID-19) response, supporting containment efforts to mitigate the outbreak.",
+    "snippets": [
+      "by AO Oyewole \u00b7 2021 \u00b7 Cited by 30 \u2014 Diagnostic testing remains the backbone of the coronavirus disease 2019 (COVID-19) response, supporting containment efforts to mitigate the outbreak."
+    ],
+    "title": "COVID-19 Impact on Diagnostic Innovations: Emerging ...",
+    "meta": {
+      "query": "COVID19 diagnostic technology updates"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.meridianbioscience.com/lifescience-blog/test-molecular-1/": {
+    "url": "https://www.meridianbioscience.com/lifescience-blog/test-molecular-1/",
+    "description": "COVID-19-driven changes in the diagnostic industry will have a lasting impact on how healthcare systems approach diagnostics for various diseases and conditions ...",
+    "snippets": [
+      "COVID-19-driven changes in the diagnostic industry will have a lasting impact on how healthcare systems approach diagnostics for various diseases and conditions ..."
+    ],
+    "title": "Diagnostic Technology Advancements Driven by the ...",
+    "meta": {
+      "query": "COVID19 diagnostic technology updates"
+    },
+    "citation_uuid": -1
+  },
+  "https://pubs.rsc.org/en/content/articlelanding/2020/ra/d0ra06445a": {
+    "url": "https://pubs.rsc.org/en/content/articlelanding/2020/ra/d0ra06445a",
+    "description": "by Q Chen \u00b7 2020 \u00b7 Cited by 41 \u2014 This review summarizes current COVID-19 diagnostic techniques based on virology, serology, and imaging diagnostics and discusses their advantages and ...",
+    "snippets": [
+      "by Q Chen \u00b7 2020 \u00b7 Cited by 41 \u2014 This review summarizes current COVID-19 diagnostic techniques based on virology, serology, and imaging diagnostics and discusses their advantages and ..."
+    ],
+    "title": "Diagnostic technologies for COVID-19: a review",
+    "meta": {
+      "query": "COVID19 diagnostic technology updates"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7344926/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7344926/",
+    "description": "by M Allam \u00b7 2020 \u00b7 Cited by 115 \u2014 Machine Learning (ML) advances can be helpful in many aspects of the COVID-19 pandemic, such as molecular, clinical, and societal utilization. Protein ...",
+    "snippets": [
+      "by M Allam \u00b7 2020 \u00b7 Cited by 115 \u2014 Machine Learning (ML) advances can be helpful in many aspects of the COVID-19 pandemic, such as molecular, clinical, and societal utilization. Protein ...",
+      "by M Allam \u00b7 2020 \u00b7 Cited by 115 \u2014 This case study helps in the analysis of how prevention of the COVID-19 infection could have been brought about by implementing control measures. ... The COVID-19 ..."
+    ],
+    "title": "COVID-19 Diagnostics, Tools, and Prevention - PMC",
+    "meta": {
+      "query": "COVID19 diagnostic tools advancements"
+    },
+    "citation_uuid": -1
+  },
+  "https://pubmed.ncbi.nlm.nih.gov/33410425/": {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33410425/",
+    "description": "by M Sreepadmanabh \u00b7 2020 \u00b7 Cited by 183 \u2014 In this review, we provide detailed critical accounts on the leading efforts at developing diagnostics tools, therapeutic agents, and vaccine candidates.",
+    "snippets": [
+      "by M Sreepadmanabh \u00b7 2020 \u00b7 Cited by 183 \u2014 In this review, we provide detailed critical accounts on the leading efforts at developing diagnostics tools, therapeutic agents, and vaccine candidates."
+    ],
+    "title": "COVID-19: Advances in diagnostic tools, treatment ...",
+    "meta": {
+      "query": "COVID19 diagnostic tools advancements"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.sciencedirect.com/science/article/pii/S2405844024059401": {
+    "url": "https://www.sciencedirect.com/science/article/pii/S2405844024059401",
+    "description": "by N Almulla \u00b7 2024 \u00b7 Cited by 5 \u2014 This article explores both nucleic acid-based and antigen-antibody serological assays, assessing the performance of recently approved FDA tests.",
+    "snippets": [
+      "by N Almulla \u00b7 2024 \u00b7 Cited by 5 \u2014 This article explores both nucleic acid-based and antigen-antibody serological assays, assessing the performance of recently approved FDA tests."
+    ],
+    "title": "Advancements in SARS-CoV-2 detection: Navigating the ...",
+    "meta": {
+      "query": "COVID19 diagnostic tools advancements"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7683280/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7683280/",
+    "description": "by N Verma \u00b7 2020 \u00b7 Cited by 57 \u2014 Another milestone is reached by E25Bio's rapid diagnostic which provide results in 15 min by detecting the presence of the virus in the patient sample (Misra ...",
+    "snippets": [
+      "by N Verma \u00b7 2020 \u00b7 Cited by 57 \u2014 Another milestone is reached by E25Bio's rapid diagnostic which provide results in 15 min by detecting the presence of the virus in the patient sample (Misra ..."
+    ],
+    "title": "Emerging diagnostic tools for detection of COVID-19 and ...",
+    "meta": {
+      "query": "COVID19 diagnostic tool milestones"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.moleculardevices.com/lab-notes/clone-screening/covid-19-timeline-diagnostics-vaccines-antibody-discovery": {
+    "url": "https://www.moleculardevices.com/lab-notes/clone-screening/covid-19-timeline-diagnostics-vaccines-antibody-discovery",
+    "description": "23 Feb 2022 \u2014 Explore the COVID-19 timeline as we outline workflow solutions for diagnosis, treatment, and prevention. Discover key systems designed to ...",
+    "snippets": [
+      "23 Feb 2022 \u2014 Explore the COVID-19 timeline as we outline workflow solutions for diagnosis, treatment, and prevention. Discover key systems designed to ..."
+    ],
+    "title": "COVID-19: Diagnostics, Vaccines, and Therapeutic ...",
+    "meta": {
+      "query": "COVID19 diagnostic tool milestones"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.sciencedirect.com/science/article/pii/S0753332222009271": {
+    "url": "https://www.sciencedirect.com/science/article/pii/S0753332222009271",
+    "description": "by RS Fernandes \u00b7 2022 \u00b7 Cited by 55 \u2014 This review summarizes the advances in the diagnostic field since the pandemic started, emphasizing various laboratory techniques for detecting COVID-19.",
+    "snippets": [
+      "by RS Fernandes \u00b7 2022 \u00b7 Cited by 55 \u2014 This review summarizes the advances in the diagnostic field since the pandemic started, emphasizing various laboratory techniques for detecting COVID-19."
+    ],
+    "title": "Recent advances in point of care testing for COVID-19 ...",
+    "meta": {
+      "query": "COVID19 diagnostic tool milestones"
+    },
+    "citation_uuid": -1
+  },
+  "https://energy.mit.edu/news/mit-tata-center-startup-e25bio-produces-15-minute-tests-for-covid-19/": {
+    "url": "https://energy.mit.edu/news/mit-tata-center-startup-e25bio-produces-15-minute-tests-for-covid-19/",
+    "description": "16 Apr 2020 \u2014 E25Bio's rapid diagnostic test resembles an over-the-counter pregnancy test and provides visual results within 15 minutes by detecting the presence of the ...",
+    "snippets": [
+      "16 Apr 2020 \u2014 E25Bio's rapid diagnostic test resembles an over-the-counter pregnancy test and provides visual results within 15 minutes by detecting the presence of the ..."
+    ],
+    "title": "Biotech startup with MIT Tata Center roots produces 15 ...",
+    "meta": {
+      "query": "E25Bio rapid COVID19 diagnostic tool technology"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC8774565/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8774565/",
+    "description": "by MF Khalid \u00b7 2022 \u00b7 Cited by 108 \u2014 The present systematic review aims to evaluate the pooled sensitivity and specificity of the commercially available RATs.",
+    "snippets": [
+      "by MF Khalid \u00b7 2022 \u00b7 Cited by 108 \u2014 On the other hand, the sensitivity was observed to be lower than average (70%) in Germany, France and India with all showing a sensitivity of 58%. The previous ...",
+      "by MF Khalid \u00b7 2022 \u00b7 Cited by 108 \u2014 The present systematic review aims to evaluate the pooled sensitivity and specificity of the commercially available RATs."
+    ],
+    "title": "Performance of Rapid Antigen Tests for COVID-19 Diagnosis",
+    "meta": {
+      "query": "E25Bio rapid COVID19 diagnostic tool technology"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.sciencedirect.com/science/article/pii/S0944501322002257": {
+    "url": "https://www.sciencedirect.com/science/article/pii/S0944501322002257",
+    "description": "by JW Xie \u00b7 2022 \u00b7 Cited by 24 \u2014 The rapid antigen test showed high sensitivity and specificity in early infection. RAT was more applicable in high-risk populations.",
+    "snippets": [
+      "by JW Xie \u00b7 2022 \u00b7 Cited by 24 \u2014 The rapid antigen test showed high sensitivity and specificity in early infection. RAT was more applicable in high-risk populations."
+    ],
+    "title": "Diagnostic accuracy of rapid antigen test for SARS-CoV-2",
+    "meta": {
+      "query": "E25Bio COVID19 diagnostic tool sensitivity and specificity"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.mdpi.com/2075-4418/12/1/110": {
+    "url": "https://www.mdpi.com/2075-4418/12/1/110",
+    "description": "by MF Khalid \u00b7 2022 \u00b7 Cited by 108 \u2014 The present systematic review aims to evaluate the pooled sensitivity and specificity of the commercially available RATs.",
+    "snippets": [
+      "by MF Khalid \u00b7 2022 \u00b7 Cited by 108 \u2014 The present systematic review aims to evaluate the pooled sensitivity and specificity of the commercially available RATs."
+    ],
+    "title": "Performance of Rapid Antigen Tests for COVID-19 Diagnosis",
+    "meta": {
+      "query": "E25Bio COVID19 diagnostic tool sensitivity and specificity"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC8234251/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8234251/",
+    "description": "by CS Pavia \u00b7 2021 \u00b7 Cited by 39 \u2014 Antigen detection tests can be used to aid in the diagnosis of various infectious-related disorders including COVID-19 where it has become especially important.",
+    "snippets": [
+      "by CS Pavia \u00b7 2021 \u00b7 Cited by 39 \u2014 Antigen detection tests can be used to aid in the diagnosis of various infectious-related disorders including COVID-19 where it has become especially important."
+    ],
+    "title": "The evolution of rapid antigen detection systems and their ...",
+    "meta": {
+      "query": "COVID19 rapid diagnostic tools advancements"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7938659/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7938659/",
+    "description": "by B Sharma \u00b7 2021 \u00b7 Cited by 23 \u2014 Nanosensors and aptamer technology are also in development which will serve as an alternative to thermal screening guns and will help in the screening of the ...",
+    "snippets": [
+      "by B Sharma \u00b7 2021 \u00b7 Cited by 23 \u2014 Nanosensors and aptamer technology are also in development which will serve as an alternative to thermal screening guns and will help in the screening of the ..."
+    ],
+    "title": "Recent advances in the diagnosis of COVID-19: a bird's ...",
+    "meta": {
+      "query": "Covid19 diagnostic advancements"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC8646981/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8646981/",
+    "description": "by J Moran-Gilad \u00b7 2021 \u2014 As the pandemic progresses, there is an increasing interest in the quality control and measurement of performance of COVID-19 diagnostics.",
+    "snippets": [
+      "by J Moran-Gilad \u00b7 2021 \u2014 As the pandemic progresses, there is an increasing interest in the quality control and measurement of performance of COVID-19 diagnostics."
+    ],
+    "title": "Measuring diagnostic performance of COVID-19 tests",
+    "meta": {
+      "query": "COVID19 diagnostic tools performance in different populations"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.sciencedirect.com/science/article/pii/S2666351122000420": {
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666351122000420",
+    "description": "by A Kumar \u00b7 2022 \u00b7 Cited by 3 \u2014 In this review, we will discuss all possible and developed techniques for identifying SARS-CoV-2 and make a comparison of their specificity, selectivity, and ...",
+    "snippets": [
+      "by A Kumar \u00b7 2022 \u00b7 Cited by 3 \u2014 In this review, we will discuss all possible and developed techniques for identifying SARS-CoV-2 and make a comparison of their specificity, selectivity, and ..."
+    ],
+    "title": "Analytical performances of different diagnostic methods for ...",
+    "meta": {
+      "query": "COVID19 diagnostic tools performance in different populations"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC8409760/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8409760/",
+    "description": "by G Rong \u00b7 2022 \u00b7 Cited by 62 \u2014 This manuscript reviews currently available methods for SARS-CoV-2 detection with the aim of helping researchers develop timely and effective technologies.",
+    "snippets": [
+      "by G Rong \u00b7 2022 \u00b7 Cited by 62 \u2014 This manuscript reviews currently available methods for SARS-CoV-2 detection with the aim of helping researchers develop timely and effective technologies."
+    ],
+    "title": "COVID-19 Diagnostic Methods and Detection Techniques",
+    "meta": {
+      "query": "COVID19 diagnostic tools implementation and effectiveness"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.sciencedirect.com/science/article/pii/S2095177920310959": {
+    "url": "https://www.sciencedirect.com/science/article/pii/S2095177920310959",
+    "description": "by B Chen \u00b7 2021 \u00b7 Cited by 21 \u2014 Diagnostic tools have a crucial role in the battle against COVID-19, which allows for the rapid implementation of control measures to suppress SARS-CoV-2 ...",
+    "snippets": [
+      "by B Chen \u00b7 2021 \u00b7 Cited by 21 \u2014 Diagnostic tools have a crucial role in the battle against COVID-19, which allows for the rapid implementation of control measures to suppress SARS-CoV-2 ..."
+    ],
+    "title": "Current diagnostic and therapeutic strategies for COVID-19",
+    "meta": {
+      "query": "COVID19 diagnostic tools implementation and effectiveness"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.sciencedirect.com/science/article/pii/S2468045124001093": {
+    "url": "https://www.sciencedirect.com/science/article/pii/S2468045124001093",
+    "description": "by O Oyefolu \u00b7 2024 \u00b7 Cited by 1 \u2014 Some obstacles hindering effective implementation of Point-of-Care Testing in hospitals include the lack of formal training programs for personnel, limited ...",
+    "snippets": [
+      "by O Oyefolu \u00b7 2024 \u00b7 Cited by 1 \u2014 Some obstacles hindering effective implementation of Point-of-Care Testing in hospitals include the lack of formal training programs for personnel, limited ..."
+    ],
+    "title": "Exploring challenges and policy considerations in point-of- ...",
+    "meta": {
+      "query": "challenges in point of care covid 19 diagnostics"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.tandfonline.com/doi/full/10.1080/14737159.2024.2330774": {
+    "url": "https://www.tandfonline.com/doi/full/10.1080/14737159.2024.2330774",
+    "description": "by B Van Der Pol \u00b7 2024 \u00b7 Cited by 1 \u2014 Opportunities and challenges of point of care testing paradigms in the post-COVID era ... COVID-19. Source: Expert Review of Molecular Diagnostics.",
+    "snippets": [
+      "by B Van Der Pol \u00b7 2024 \u00b7 Cited by 1 \u2014 Opportunities and challenges of point of care testing paradigms in the post-COVID era ... COVID-19. Source: Expert Review of Molecular Diagnostics."
+    ],
+    "title": "Opportunities and challenges of point of care testing ...",
+    "meta": {
+      "query": "challenges in point of care covid 19 diagnostics"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC9371983/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9371983/",
+    "description": "by RS Fernandes \u00b7 2022 \u00b7 Cited by 55 \u2014 The main challenges were the differential diagnosis of COVID-19 and the development of specific, rapid, and sensitive tests that could reach all people. RT-PCR ...",
+    "snippets": [
+      "by RS Fernandes \u00b7 2022 \u00b7 Cited by 55 \u2014 The main challenges were the differential diagnosis of COVID-19 and the development of specific, rapid, and sensitive tests that could reach all people. RT-PCR ..."
+    ],
+    "title": "Recent advances in point of care testing for COVID-19 ...",
+    "meta": {
+      "query": "challenges in point of care covid 19 diagnostics"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.cdc.gov/covid/php/lab/point-of-care-testing.html": {
+    "url": "https://www.cdc.gov/covid/php/lab/point-of-care-testing.html",
+    "description": "31 Oct 2024 \u2014 This guidance provides information on the regulatory requirements for SARS-CoV-2 rapid testing performed in point-of-care settings, ...",
+    "snippets": [
+      "31 Oct 2024 \u2014 This guidance provides information on the regulatory requirements for SARS-CoV-2 rapid testing performed in point-of-care settings, ..."
+    ],
+    "title": "Guidance for SARS-CoV-2 Rapid Testing in Point-of-Care ...",
+    "meta": {
+      "query": "regulatory hurdles point of care covid 19 testing"
+    },
+    "citation_uuid": -1
+  },
+  "https://www.sciencedirect.com/science/article/pii/S2667237522000856": {
+    "url": "https://www.sciencedirect.com/science/article/pii/S2667237522000856",
+    "description": "by S Farmer \u00b7 2022 \u00b7 Cited by 16 \u2014 This laboratory environment is standardized and regulated by government and professional agencies to maximize quality and minimize diagnostic ...",
+    "snippets": [
+      "by S Farmer \u00b7 2022 \u00b7 Cited by 16 \u2014 This laboratory environment is standardized and regulated by government and professional agencies to maximize quality and minimize diagnostic ..."
+    ],
+    "title": "Lessons learned from COVID-19 point-of-care testing",
+    "meta": {
+      "query": "regulatory hurdles point of care covid 19 testing"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC8214682/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8214682/",
+    "description": "by C Rock \u00b7 2021 \u2014 We must devise more sensible regulations that meet the moment, allowing for rapid, widespread COVID-19 point-of-care testing.",
+    "snippets": [
+      "by C Rock \u00b7 2021 \u2014 We must devise more sensible regulations that meet the moment, allowing for rapid, widespread COVID-19 point-of-care testing."
+    ],
+    "title": "Opinion: How to ensure regulations don't stymie much- ...",
+    "meta": {
+      "query": "regulatory hurdles point of care covid 19 testing"
+    },
+    "citation_uuid": -1
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC11110428/": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11110428/",
+    "description": "by M Ansu-Mensah \u00b7 2024 \u00b7 Cited by 4 \u2014 This study identified the barriers impeding the implementation of POC diagnostic testing in health facilities without laboratories in the Bono Region of Ghana.",
+    "snippets": [
+      "by M Ansu-Mensah \u00b7 2024 \u00b7 Cited by 4 \u2014 This study identified the barriers impeding the implementation of POC diagnostic testing in health facilities without laboratories in the Bono Region of Ghana."
+    ],
+    "title": "Sustainable solutions to barriers of point-of-care diagnostic ...",
+    "meta": {
+      "query": "barriers to accessibility of covid 19 point of care diagnostics"
+    },
+    "citation_uuid": -1
+  },
+  "https://cloudlims.com/overcome-barriers-in-covid-19-point-of-care-diagnostics/": {
+    "url": "https://cloudlims.com/overcome-barriers-in-covid-19-point-of-care-diagnostics/",
+    "description": "27 Oct 2021 \u2014 Given the limited testing resources, such a massive scale of testing has been hard to achieve. Point-of-care testing (POCT) can help accelerate ...",
+    "snippets": [
+      "27 Oct 2021 \u2014 Given the limited testing resources, such a massive scale of testing has been hard to achieve. Point-of-care testing (POCT) can help accelerate ..."
+    ],
+    "title": "Overcome Barriers in COVID-19 Point-of-care Diagnostics",
+    "meta": {
+      "query": "barriers to accessibility of covid 19 point of care diagnostics"
+    },
+    "citation_uuid": -1
+  }
+}

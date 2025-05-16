@@ -10,6 +10,7 @@ from dsp import backoff_hdlr, giveup_hdlr
 
 from .utils import WebPageHelper
 
+
 class BingSearch(dspy.Retrieve):
     def __init__(
         self,

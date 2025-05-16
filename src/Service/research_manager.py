@@ -16,6 +16,7 @@ from src.knowledge_storm.encoder import get_encoder
 
 load_dotenv()
 
+
 class ResearchManager:
     def __init__(self):
         self.encoder = None
@@ -47,12 +48,7 @@ class ResearchManager:
 
     def run_groq(self, output_dir="./results/groq"):
         self._get_encoder()
-        novita_kwargs = {
-            "api_key": os.getenv("NOVITA_API_KEY"),
-            "api_base": "https://api.novita.ai/v3/openai",
-            "temperature": 1.0,
-            "top_p": 0.8,
-        }
+
         groq_kwargs = {
             "api_key": os.environ.get("GROQ_API_KEY"),
             "api_base": "https://api.groq.com/openai/v1",
@@ -63,17 +59,18 @@ class ResearchManager:
         lm_configs = STORMWikiLMConfigs()
         lm_configs.set_conv_simulator_lm(GroqModel("llama-3.1-8b-instant", max_tokens=800, **groq_kwargs))
         lm_configs.set_question_asker_lm(GroqModel("llama-3.1-8b-instant", max_tokens=800, **groq_kwargs))
-        for stage in ["set_outline_gen_lm", "set_article_gen_lm", "set_article_polish_lm"]:
-            getattr(lm_configs, stage)(
-                GroqModel("qwen/qwen3-235b-a22b-fp8", max_tokens=96000, **novita_kwargs)
-            )
+        lm_configs.set_outline_gen_lm(
+            GroqModel("meta-llama/llama-4-maverick-17b-128e-instruct", max_tokens=5000, **groq_kwargs))
+
+        lm_configs.set_article_gen_lm(GroqModel("deepseek-r1-distill-llama-70b", max_tokens=96000, **groq_kwargs))
+        lm_configs.set_article_polish_lm(GroqModel("deepseek-r1-distill-llama-70b", max_tokens=96000, **groq_kwargs))
 
         max_threads = max(1, (os.cpu_count() or 4) - 2)
         engine_args = STORMWikiRunnerArguments(
             output_dir=output_dir,
-            max_conv_turn=5,
-            max_perspective=5,
-            search_top_k=5,
+            max_conv_turn=4,
+            max_perspective=4,
+            search_top_k=4,
             max_thread_num=max_threads,
         )
 

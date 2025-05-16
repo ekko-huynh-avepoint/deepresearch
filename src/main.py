@@ -31,7 +31,7 @@ async def deep_research(
             output_dir = f"./results/{model}"
 
         research_manager.set_topic(query)
-        
+
         research_manager.run_groq(output_dir=output_dir)
 
         # if model == "gpt":
@@ -54,9 +54,7 @@ async def deep_research(
             ),
             "output_dir": output_dir,
             "model": model,
-            "query": query,
-            "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            "user": "ekko-huynh-avepoint"
+            "query": query
         }
     except Exception as err:
         logger.error(f"Error in deep_research: {err}", exc_info=True)

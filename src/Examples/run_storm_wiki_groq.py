@@ -9,11 +9,10 @@ from src.knowledge_storm import (
 )
 from src.knowledge_storm.lm import GroqModel
 from src.knowledge_storm.rm import (
-    BingSearch,
     BraveRM,
     DuckDuckGoSearchRM,
     FirecrawlRM,
-    VectorRM,  # <<-- Add VectorRM
+    VectorRM,
 )
 from src.knowledge_storm.utils import QdrantVectorStoreManager  # <<-- Add QdrantVectorStoreManager
 from qdrant_client import QdrantClient  # <<-- Add QdrantClient
