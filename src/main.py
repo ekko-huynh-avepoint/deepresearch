@@ -135,9 +135,7 @@ async def deep_research(
 
 
 if __name__ == "__main__":
-    current_time = datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
     logger.info(f"Starting {SERVER_NAME} on {SERVER_HOST}:{SERVER_PORT}")
-    logger.info(f"Current time: {current_time}")
     logger.info(f"Current user: ekko-huynh-avepoint")
 
     try:
