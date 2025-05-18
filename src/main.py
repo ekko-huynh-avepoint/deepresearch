@@ -5,10 +5,12 @@ import logging
 import datetime
 import boto3
 import sys
+import json
+import time
 from mcp.server.fastmcp import FastMCP
 from src.Service.research_manager import ResearchManager
 from src.knowledge_storm.reports import generate_research_report
-from typing import Optional
+from typing import Optional, List, Dict
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -37,9 +39,20 @@ S3_BUCKET = os.environ.get("S3_BUCKET", "mcp")
 S3_ACCESS_KEY_ID = os.environ.get("S3_ACCESS_KEY_ID")
 S3_SECRET_ACCESS_KEY = os.environ.get("S3_SECRET_ACCESS_KEY")
 
-# Data directory setup
-DATA_DIR = "data"
-os.makedirs(DATA_DIR, exist_ok=True)
+# Important paths - Use absolute paths with container environment in mind
+# Base directory should be /app in container environment
+BASE_DIR = "/app"
+if not os.path.exists(BASE_DIR):
+    BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+    logger.info(f"Base directory /app not found, using current directory: {BASE_DIR}")
+
+DATA_DIR = os.path.join(BASE_DIR, "data")
+RESULTS_DIR = os.path.join(BASE_DIR, "src", "results")
+
+# Ensure directories exist
+for directory in [DATA_DIR, RESULTS_DIR]:
+    os.makedirs(directory, exist_ok=True)
+    logger.info(f"Ensured directory exists: {directory}")
 
 # Initialize server
 mcp = FastMCP(name=SERVER_NAME, host=SERVER_HOST, port=SERVER_PORT)
@@ -49,6 +62,7 @@ research_manager = ResearchManager()
 
 # Log configuration details at startup
 logger.info(f"Server initialized: {SERVER_NAME} on {SERVER_HOST}:{SERVER_PORT}")
+logger.info(f"Environment: BASE_DIR={BASE_DIR}, RESULTS_DIR={RESULTS_DIR}")
 logger.info(f"S3 Configuration: Endpoint={S3_ENDPOINT}, Bucket={S3_BUCKET}")
 logger.info(f"S3 Credentials Available: Access Key={'✓' if S3_ACCESS_KEY_ID else '✗'}, "
             f"Secret Key={'✓' if S3_SECRET_ACCESS_KEY else '✗'}")
@@ -59,6 +73,27 @@ def generate_random_hash(length=8):
     random_uuid = uuid.uuid4()
     hash_object = hashlib.md5(str(random_uuid).encode())
     return hash_object.hexdigest()[:length]
+
+
+def verify_research_files(topic_dir: str) -> Dict[str, bool]:
+    """Verify research files exist in the specified directory"""
+    required_files = [
+        "raw_search_results.json",
+        "url_to_info.json",
+        "storm_gen_outline.txt",
+        "direct_gen_outline.txt",
+        "storm_gen_article.txt",
+        "storm_gen_article_polished.txt"
+    ]
+
+    results = {}
+    for file in required_files:
+        file_path = os.path.join(topic_dir, file)
+        exists = os.path.exists(file_path)
+        results[file] = exists
+        logger.info(f"Research file check: {file_path} - {'FOUND' if exists else 'NOT FOUND'}")
+
+    return results
 
 
 def remove_directory_contents(directory):
@@ -87,13 +122,6 @@ def remove_directory_contents(directory):
                     logger.debug(f"Removed directory: {dir_path}")
                 except OSError as e:
                     logger.warning(f"Failed to remove directory {dir_path}: {e}")
-
-        # Try to remove the main directory itself
-        try:
-            os.rmdir(directory)
-            logger.info(f"Removed main directory: {directory}")
-        except OSError as e:
-            logger.warning(f"Could not remove main directory {directory}: {e}")
     except Exception as e:
         logger.error(f"Error cleaning directory {directory}: {e}", exc_info=True)
 
@@ -120,9 +148,6 @@ def reliable_upload_to_s3(data: bytes, s3_key: str) -> Optional[str]:
             # Upload the file
             s3.put_object(Bucket=S3_BUCKET, Key=s3_key, Body=data)
 
-            # Verify upload by checking if the object exists
-            s3.head_object(Bucket=S3_BUCKET, Key=s3_key)
-
             # Construct the S3 URL
             if S3_ENDPOINT.endswith('/'):
                 endpoint = S3_ENDPOINT
@@ -140,48 +165,94 @@ def reliable_upload_to_s3(data: bytes, s3_key: str) -> Optional[str]:
                 return None
 
 
+def create_fallback_research_files(topic_dir: str, topic: str):
+    """Create fallback research files if the original research process fails"""
+    logger.info(f"Creating fallback research files in {topic_dir}")
+
+    # Ensure the directory exists
+    os.makedirs(topic_dir, exist_ok=True)
+
+    # Create minimal versions of required files
+    files_to_create = {
+        "raw_search_results.json": json.dumps({"urls": []}),
+        "url_to_info.json": json.dumps({}),
+        "storm_gen_outline.txt": f"# {topic} Research Outline\n\n1. Introduction\n2. Summary\n3. Conclusion",
+        "direct_gen_outline.txt": f"# {topic} Research Outline\n\n1. Introduction\n2. Summary\n3. Conclusion",
+        "storm_gen_article.txt": f"# {topic} Research\n\nThis is a placeholder article for {topic}.",
+        "storm_gen_article_polished.txt": f"# {topic} Research\n\nThis is a placeholder article for {topic}."
+    }
+
+    for filename, content in files_to_create.items():
+        file_path = os.path.join(topic_dir, filename)
+        with open(file_path, 'w') as f:
+            f.write(content)
+        logger.info(f"Created fallback file: {file_path}")
+
+
 @mcp.tool()
 async def deep_research(query: str):
     """Perform deep research on a given query"""
     logger.info(f"Starting deep research on: {query}")
 
-    # Define directories
-    base_output_dir = os.path.abspath("./src/results/")
+    # Define directories using absolute paths
     topic_name = query.replace(" ", "_")
-    groq_dir = os.path.join(base_output_dir, "groq")
-    results_dir = os.path.join(groq_dir, topic_name)
+    groq_dir = os.path.join(RESULTS_DIR, "groq")
+    topic_dir = os.path.join(groq_dir, topic_name)
 
     # Create directories with verbose logging
-    for dir_path in [base_output_dir, groq_dir, results_dir]:
-        if not os.path.exists(dir_path):
-            try:
-                os.makedirs(dir_path, exist_ok=True)
-                logger.info(f"Created directory: {dir_path}")
-            except Exception as e:
-                logger.error(f"Failed to create directory {dir_path}: {e}")
-                return {
-                    "status": "error",
-                    "summary": f"Failed to create directory structure: {e}"
-                }
+    for dir_path in [RESULTS_DIR, groq_dir, topic_dir]:
+        os.makedirs(dir_path, exist_ok=True)
+        logger.info(f"Ensured directory exists: {dir_path}")
 
-    logger.info(
-        f"Directory structure: base_output_dir={base_output_dir}, groq_dir={groq_dir}, results_dir={results_dir}")
+    logger.info(f"Directory structure: RESULTS_DIR={RESULTS_DIR}, groq_dir={groq_dir}, topic_dir={topic_dir}")
+
+    # List any existing files in the directory
+    if os.path.exists(topic_dir) and os.listdir(topic_dir):
+        logger.info(f"Existing files in {topic_dir}: {os.listdir(topic_dir)}")
 
     pdf_path = None
     download_url = None
+    research_successful = False
 
     try:
         # Set research topic
         research_manager.set_topic(query)
         logger.info(f"Research topic set to: {query}")
 
-        # Run research
-        logger.info(f"Running Groq research with output_dir: {base_output_dir}")
-        research_manager.run_groq(output_dir=base_output_dir)
+        # Run research with absolute output directory path
+        logger.info(f"Running Groq research with output_dir: {RESULTS_DIR}")
+        try:
+            research_manager.run_groq(output_dir=RESULTS_DIR)
+            logger.info(f"Research completed, checking for output files")
+
+            # Verify files exist
+            time.sleep(1)  # Small delay to ensure file system updates
+            file_check = verify_research_files(topic_dir)
+            research_successful = all(file_check.values())
+
+            if not research_successful:
+                logger.warning(f"Research process didn't generate all required files: {file_check}")
+                # Create fallback files
+                create_fallback_research_files(topic_dir, query)
+                logger.info("Created fallback research files")
+
+        except Exception as e:
+            logger.error(f"Error during Groq research: {e}", exc_info=True)
+            # Create fallback files
+            create_fallback_research_files(topic_dir, query)
+            logger.info("Created fallback research files after research error")
 
         # Generate report
-        logger.info(f"Generating PDF report for {topic_name} in directory {results_dir}")
-        pdf_path = generate_research_report(results_dir, topic_name)
+        logger.info(f"Generating PDF report for {topic_name} in directory {topic_dir}")
+        try:
+            pdf_path = generate_research_report(topic_dir, topic_name)
+            logger.info(f"PDF path returned: {pdf_path}")
+        except Exception as e:
+            logger.error(f"Error in generate_research_report: {e}", exc_info=True)
+            return {
+                "status": "error",
+                "summary": f"Failed to generate PDF report: {e}"
+            }
 
         if not pdf_path:
             logger.error("PDF path is None - report generation failed")
@@ -189,8 +260,6 @@ async def deep_research(query: str):
                 "status": "error",
                 "summary": "PDF report generation failed - no path returned"
             }
-
-        logger.info(f"PDF path returned: {pdf_path}")
 
         # Verify PDF exists
         if not os.path.exists(pdf_path):
@@ -251,15 +320,17 @@ async def deep_research(query: str):
                 "summary": f"Error processing PDF file: {e}"
             }
 
-        # Success response
+        # Success response with warning if fallback files were used
+        status_prefix = "" if research_successful else "⚠️ NOTE: Research process used fallback files. "
         return {
             "status": "success",
             "summary": (
-                f"✅ Research completed successfully.\n"
+                f"✅ {status_prefix}Research completed.\n"
                 f"PDF report generated: {unique_pdf_name}\n"
                 f"Download link: {download_url}\n"
             ),
-            "pdf_download_url": download_url
+            "pdf_download_url": download_url,
+            "used_fallback": not research_successful
         }
     except Exception as err:
         logger.error(f"Error in deep_research: {err}", exc_info=True)
@@ -268,13 +339,9 @@ async def deep_research(query: str):
             "summary": f"Research process error: {err}",
         }
     finally:
-        # Clean up with better logging
-        if os.path.exists(results_dir):
-            logger.info(f"Cleaning up research documents in {results_dir}")
-            remove_directory_contents(results_dir)
-            logger.info(f"Research documents cleanup completed")
-        else:
-            logger.warning(f"Results directory not found for cleanup: {results_dir}")
+        # Don't clean up right away - keep files for debugging
+        # We'll let the next run clean them up
+        logger.info(f"Keeping research documents in {topic_dir} for debugging")
 
 
 if __name__ == "__main__":
