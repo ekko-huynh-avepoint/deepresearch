@@ -4,34 +4,54 @@ import hashlib
 import logging
 import datetime
 import boto3
+import sys
 from mcp.server.fastmcp import FastMCP
 from src.Service.research_manager import ResearchManager
 from src.knowledge_storm.reports import generate_research_report
 from typing import Optional
 from dotenv import load_dotenv
 
+# Load environment variables
 load_dotenv()
 
-# Setup logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Setup enhanced logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(name)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(sys.stdout),
+        logging.FileHandler("research_server.log")
+    ]
+)
 logger = logging.getLogger(__name__)
 
+# Server configuration
 SERVER_NAME = "ResearchServer"
 SERVER_HOST = os.environ.get("SERVER_HOST", "0.0.0.0")
 SERVER_PORT = int(os.environ.get("SERVER_PORT", 3555))
 IP_ADDRESS = os.environ.get("IP_ADDRESS", "127.0.0.1")
 
+# S3 configuration
 S3_ENDPOINT = os.environ.get("S3_ENDPOINT_URL")
 S3_BUCKET = os.environ.get("S3_BUCKET", "mcp")
 S3_ACCESS_KEY_ID = os.environ.get("S3_ACCESS_KEY_ID")
 S3_SECRET_ACCESS_KEY = os.environ.get("S3_SECRET_ACCESS_KEY")
 
+# Data directory setup
 DATA_DIR = "data"
 os.makedirs(DATA_DIR, exist_ok=True)
 
+# Initialize server
 mcp = FastMCP(name=SERVER_NAME, host=SERVER_HOST, port=SERVER_PORT)
 
+# Initialize research manager
 research_manager = ResearchManager()
+
+# Log configuration details at startup
+logger.info(f"Server initialized: {SERVER_NAME} on {SERVER_HOST}:{SERVER_PORT}")
+logger.info(f"S3 Configuration: Endpoint={S3_ENDPOINT}, Bucket={S3_BUCKET}")
+logger.info(f"S3 Credentials Available: Access Key={'✓' if S3_ACCESS_KEY_ID else '✗'}, "
+            f"Secret Key={'✓' if S3_SECRET_ACCESS_KEY else '✗'}")
 
 
 def generate_random_hash(length=8):
@@ -42,90 +62,158 @@ def generate_random_hash(length=8):
 
 
 def remove_directory_contents(directory):
-    """Remove all files and subdirectories in a directory using only os module"""
-    for root, dirs, files in os.walk(directory, topdown=False):
-        # First remove all files in current directory
-        for file in files:
-            file_path = os.path.join(root, file)
-            os.remove(file_path)
-        # Then remove all empty directories
-        for dir in dirs:
-            dir_path = os.path.join(root, dir)
-            try:
-                os.rmdir(dir_path)
-            except OSError:
-                # Directory might not be empty yet
-                pass
-    # Try to remove the main directory itself
+    """Remove all files and subdirectories in a directory"""
+    if not os.path.exists(directory):
+        logger.warning(f"Directory does not exist, cannot clean: {directory}")
+        return
+
+    logger.info(f"Cleaning directory: {directory}")
     try:
-        os.rmdir(directory)
-    except OSError:
-        logger.warning(f"Could not completely remove directory: {directory}")
+        for root, dirs, files in os.walk(directory, topdown=False):
+            # First remove all files in current directory
+            for file in files:
+                file_path = os.path.join(root, file)
+                try:
+                    os.remove(file_path)
+                    logger.debug(f"Removed file: {file_path}")
+                except OSError as e:
+                    logger.warning(f"Failed to remove file {file_path}: {e}")
+
+            # Then remove all empty directories
+            for dir in dirs:
+                dir_path = os.path.join(root, dir)
+                try:
+                    os.rmdir(dir_path)
+                    logger.debug(f"Removed directory: {dir_path}")
+                except OSError as e:
+                    logger.warning(f"Failed to remove directory {dir_path}: {e}")
+
+        # Try to remove the main directory itself
+        try:
+            os.rmdir(directory)
+            logger.info(f"Removed main directory: {directory}")
+        except OSError as e:
+            logger.warning(f"Could not remove main directory {directory}: {e}")
+    except Exception as e:
+        logger.error(f"Error cleaning directory {directory}: {e}", exc_info=True)
 
 
 def reliable_upload_to_s3(data: bytes, s3_key: str) -> Optional[str]:
-    try:
-        s3 = boto3.client(
-            "s3",
-            endpoint_url=S3_ENDPOINT,
-            aws_access_key_id=S3_ACCESS_KEY_ID,
-            aws_secret_access_key=S3_SECRET_ACCESS_KEY,
-        )
-
-        s3.put_object(Bucket=S3_BUCKET, Key=s3_key, Body=data)
-
-        if S3_ENDPOINT.endswith('/'):
-            endpoint = S3_ENDPOINT
-        else:
-            endpoint = f"{S3_ENDPOINT}/"
-
-        # Construct the S3 URL
-        s3_url = f"{endpoint}{S3_BUCKET}/{s3_key}"
-        logger.info(f"Successfully uploaded to S3: {s3_url}")
-        return s3_url
-
-    except Exception as e:
-        logger.error(f"Failed to upload to S3: {e}", exc_info=True)
+    """Upload file to S3 with enhanced error handling and retries"""
+    if not all([S3_ENDPOINT, S3_ACCESS_KEY_ID, S3_SECRET_ACCESS_KEY, S3_BUCKET]):
+        logger.error(f"S3 configuration is incomplete. Cannot upload to S3.")
         return None
+
+    logger.info(f"Attempting S3 upload with key: {s3_key}, file size: {len(data)} bytes")
+
+    # Try up to 3 times
+    max_retries = 3
+    for attempt in range(1, max_retries + 1):
+        try:
+            s3 = boto3.client(
+                "s3",
+                endpoint_url=S3_ENDPOINT,
+                aws_access_key_id=S3_ACCESS_KEY_ID,
+                aws_secret_access_key=S3_SECRET_ACCESS_KEY,
+            )
+
+            # Upload the file
+            s3.put_object(Bucket=S3_BUCKET, Key=s3_key, Body=data)
+
+            # Verify upload by checking if the object exists
+            s3.head_object(Bucket=S3_BUCKET, Key=s3_key)
+
+            # Construct the S3 URL
+            if S3_ENDPOINT.endswith('/'):
+                endpoint = S3_ENDPOINT
+            else:
+                endpoint = f"{S3_ENDPOINT}/"
+
+            s3_url = f"{endpoint}{S3_BUCKET}/{s3_key}"
+            logger.info(f"Successfully uploaded to S3: {s3_url}")
+            return s3_url
+
+        except Exception as e:
+            logger.warning(f"S3 upload attempt {attempt} failed: {e}")
+            if attempt == max_retries:
+                logger.error(f"Failed to upload to S3 after {max_retries} attempts", exc_info=True)
+                return None
 
 
 @mcp.tool()
-async def deep_research(
-        query: str
-):
-    output_dir = f"./src/results/"
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir, exist_ok=True)
-        logger.info(f"Created output directory: {output_dir}")
+async def deep_research(query: str):
+    """Perform deep research on a given query"""
+    logger.info(f"Starting deep research on: {query}")
 
-    research_manager.set_topic(query)
-
+    # Define directories
+    base_output_dir = os.path.abspath("./src/results/")
     topic_name = query.replace(" ", "_")
-    results_dir = os.path.join(output_dir, "groq", topic_name)
+    groq_dir = os.path.join(base_output_dir, "groq")
+    results_dir = os.path.join(groq_dir, topic_name)
 
-    # Ensure results directory exists
-    groq_dir = os.path.join(output_dir, "groq")
-    if not os.path.exists(groq_dir):
-        os.makedirs(groq_dir, exist_ok=True)
-        logger.info(f"Created groq directory: {groq_dir}")
+    # Create directories with verbose logging
+    for dir_path in [base_output_dir, groq_dir, results_dir]:
+        if not os.path.exists(dir_path):
+            try:
+                os.makedirs(dir_path, exist_ok=True)
+                logger.info(f"Created directory: {dir_path}")
+            except Exception as e:
+                logger.error(f"Failed to create directory {dir_path}: {e}")
+                return {
+                    "status": "error",
+                    "summary": f"Failed to create directory structure: {e}"
+                }
 
-    if not os.path.exists(results_dir):
-        os.makedirs(results_dir, exist_ok=True)
-        logger.info(f"Created results directory: {results_dir}")
+    logger.info(
+        f"Directory structure: base_output_dir={base_output_dir}, groq_dir={groq_dir}, results_dir={results_dir}")
 
     pdf_path = None
     download_url = None
 
     try:
-        research_manager.run_groq(output_dir=output_dir)
-        logger.info(f"Generating PDF report for {topic_name}")
+        # Set research topic
+        research_manager.set_topic(query)
+        logger.info(f"Research topic set to: {query}")
+
+        # Run research
+        logger.info(f"Running Groq research with output_dir: {base_output_dir}")
+        research_manager.run_groq(output_dir=base_output_dir)
+
+        # Generate report
+        logger.info(f"Generating PDF report for {topic_name} in directory {results_dir}")
         pdf_path = generate_research_report(results_dir, topic_name)
 
-        if not pdf_path or not os.path.exists(pdf_path):
-            raise FileNotFoundError(f"PDF report was not generated: {pdf_path}")
+        if not pdf_path:
+            logger.error("PDF path is None - report generation failed")
+            return {
+                "status": "error",
+                "summary": "PDF report generation failed - no path returned"
+            }
 
-        logger.info(f"PDF report generated successfully: {pdf_path}")
+        logger.info(f"PDF path returned: {pdf_path}")
 
+        # Verify PDF exists
+        if not os.path.exists(pdf_path):
+            logger.error(f"Generated PDF not found at path: {pdf_path}")
+
+            # List directory contents to help debug
+            parent_dir = os.path.dirname(pdf_path)
+            if os.path.exists(parent_dir):
+                files = os.listdir(parent_dir)
+                logger.info(f"Files in {parent_dir}: {files}")
+            else:
+                logger.error(f"Parent directory {parent_dir} does not exist")
+
+            return {
+                "status": "error",
+                "summary": f"PDF report was not found at expected path: {pdf_path}"
+            }
+
+        # PDF exists, get info
+        file_size = os.path.getsize(pdf_path)
+        logger.info(f"PDF report generated successfully: {pdf_path}, size: {file_size} bytes")
+
+        # Create unique filename
         unique_hash = generate_random_hash()
         date = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d_%H%M%S")
 
@@ -135,22 +223,39 @@ async def deep_research(
 
         s3_key = f"research_reports/{topic_name}/{unique_pdf_name}".replace("\\", "/")
 
-        with open(pdf_path, 'rb') as pdf_file:
-            pdf_data = pdf_file.read()
-            if not pdf_data:
-                raise ValueError("PDF file is empty")
+        # Upload to S3
+        try:
+            with open(pdf_path, 'rb') as pdf_file:
+                pdf_data = pdf_file.read()
+                if not pdf_data or len(pdf_data) == 0:
+                    logger.error(f"PDF file is empty: {pdf_path}")
+                    return {
+                        "status": "error",
+                        "summary": f"Generated PDF file is empty: {pdf_path}"
+                    }
 
-            logger.info(f"PDF file read successfully, size: {len(pdf_data)} bytes")
+                logger.info(f"PDF file read successfully, size: {len(pdf_data)} bytes")
 
-            download_url = reliable_upload_to_s3(pdf_data, s3_key)
+                download_url = reliable_upload_to_s3(pdf_data, s3_key)
 
-            if not download_url:
-                raise Exception("Failed to upload PDF to S3, no download URL returned")
+                if not download_url:
+                    logger.error("Failed to upload PDF to S3, no download URL returned")
+                    return {
+                        "status": "error",
+                        "summary": "Failed to upload PDF to S3 service"
+                    }
+        except Exception as e:
+            logger.error(f"Error reading or uploading PDF: {e}", exc_info=True)
+            return {
+                "status": "error",
+                "summary": f"Error processing PDF file: {e}"
+            }
 
+        # Success response
         return {
             "status": "success",
             "summary": (
-                f"✅ Research completed using backend.\n"
+                f"✅ Research completed successfully.\n"
                 f"PDF report generated: {unique_pdf_name}\n"
                 f"Download link: {download_url}\n"
             ),
@@ -160,17 +265,21 @@ async def deep_research(
         logger.error(f"Error in deep_research: {err}", exc_info=True)
         return {
             "status": "error",
-            "summary": f"AI self-heal: Encountered error during deep research: {err}",
+            "summary": f"Research process error: {err}",
         }
     finally:
-        logger.info(f"Cleaning up research documents in {results_dir}")
+        # Clean up with better logging
         if os.path.exists(results_dir):
+            logger.info(f"Cleaning up research documents in {results_dir}")
             remove_directory_contents(results_dir)
             logger.info(f"Research documents cleanup completed")
+        else:
+            logger.warning(f"Results directory not found for cleanup: {results_dir}")
 
 
 if __name__ == "__main__":
-    logger.info(f"Starting {SERVER_NAME} on {SERVER_HOST}:{SERVER_PORT}")
+    start_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    logger.info(f"Starting {SERVER_NAME} at {start_time}")
     logger.info(f"Current user: ekko-huynh-avepoint")
 
     try:
@@ -180,4 +289,5 @@ if __name__ == "__main__":
     except Exception as e:
         logger.error(f"{SERVER_NAME} exited with error: {e}", exc_info=True)
     finally:
-        logger.info(f"{SERVER_NAME} has shut down.")
+        end_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        logger.info(f"{SERVER_NAME} has shut down at {end_time}.")
