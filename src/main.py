@@ -93,7 +93,7 @@ def reliable_upload_to_s3(data: bytes, s3_key: str) -> Optional[str]:
 async def deep_research(
         query: str
 ):
-    output_dir = f"./results/"
+    output_dir = f"./src/results/"
     if not os.path.exists(output_dir):
         os.makedirs(output_dir, exist_ok=True)
         logger.info(f"Created output directory: {output_dir}")
