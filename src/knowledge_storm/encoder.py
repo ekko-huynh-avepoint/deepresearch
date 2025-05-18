@@ -10,6 +10,10 @@ import random
 import sys
 
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 class CleanOllamaEmbeddings:
     def __init__(self, model: str, base_url: str, name: str):
         self.model = model

@@ -3,10 +3,14 @@ import uuid
 import hashlib
 import logging
 import datetime
+import boto3
 from mcp.server.fastmcp import FastMCP
 from src.Service.research_manager import ResearchManager
-from src.Service.s3_tool import upload_to_s3
 from src.knowledge_storm.reports import generate_research_report
+from typing import Optional
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -17,6 +21,11 @@ SERVER_HOST = os.environ.get("SERVER_HOST", "0.0.0.0")
 SERVER_PORT = int(os.environ.get("SERVER_PORT", 3555))
 IP_ADDRESS = os.environ.get("IP_ADDRESS", "127.0.0.1")
 
+S3_ENDPOINT = os.environ.get("S3_ENDPOINT_URL")
+S3_BUCKET = os.environ.get("S3_BUCKET", "mcp")
+S3_ACCESS_KEY_ID = os.environ.get("S3_ACCESS_KEY_ID")
+S3_SECRET_ACCESS_KEY = os.environ.get("S3_SECRET_ACCESS_KEY")
+
 DATA_DIR = "data"
 os.makedirs(DATA_DIR, exist_ok=True)
 
@@ -26,6 +35,7 @@ research_manager = ResearchManager()
 
 
 def generate_random_hash(length=8):
+    """Generate a random hash for unique file naming"""
     random_uuid = uuid.uuid4()
     hash_object = hashlib.md5(str(random_uuid).encode())
     return hash_object.hexdigest()[:length]
@@ -53,22 +63,43 @@ def remove_directory_contents(directory):
         logger.warning(f"Could not completely remove directory: {directory}")
 
 
+def reliable_upload_to_s3(data: bytes, s3_key: str) -> Optional[str]:
+    try:
+        s3 = boto3.client(
+            "s3",
+            endpoint_url=S3_ENDPOINT,
+            aws_access_key_id=S3_ACCESS_KEY_ID,
+            aws_secret_access_key=S3_SECRET_ACCESS_KEY,
+        )
+
+        s3.put_object(Bucket=S3_BUCKET, Key=s3_key, Body=data)
+
+        if S3_ENDPOINT.endswith('/'):
+            endpoint = S3_ENDPOINT
+        else:
+            endpoint = f"{S3_ENDPOINT}/"
+
+        # Construct the S3 URL
+        s3_url = f"{endpoint}{S3_BUCKET}/{s3_key}"
+        logger.info(f"Successfully uploaded to S3: {s3_url}")
+        return s3_url
+
+    except Exception as e:
+        logger.error(f"Failed to upload to S3: {e}", exc_info=True)
+        return None
+
+
 @mcp.tool()
 async def deep_research(
-        query: str,
-        output_dir: str = None
+        query: str
 ):
-    if output_dir is None:
-        output_dir = f"./results/"
-
-    # Ensure output directory exists
+    output_dir = f"./results/"
     if not os.path.exists(output_dir):
         os.makedirs(output_dir, exist_ok=True)
         logger.info(f"Created output directory: {output_dir}")
 
     research_manager.set_topic(query)
 
-    # Clean topic name for directory naming
     topic_name = query.replace(" ", "_")
     results_dir = os.path.join(output_dir, "groq", topic_name)
 
@@ -86,28 +117,35 @@ async def deep_research(
     download_url = None
 
     try:
-        # Run research using Groq
         research_manager.run_groq(output_dir=output_dir)
-
-        # Generate PDF report
         logger.info(f"Generating PDF report for {topic_name}")
         pdf_path = generate_research_report(results_dir, topic_name)
 
-        # Generate unique hash and get current time
-        unique_hash = generate_random_hash()
+        if not pdf_path or not os.path.exists(pdf_path):
+            raise FileNotFoundError(f"PDF report was not generated: {pdf_path}")
 
+        logger.info(f"PDF report generated successfully: {pdf_path}")
+
+        unique_hash = generate_random_hash()
         date = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d_%H%M%S")
 
-        # Upload PDF to S3 for download link with unique hash and timestamp
         pdf_filename = os.path.basename(pdf_path)
         filename_parts = os.path.splitext(pdf_filename)
         unique_pdf_name = f"{filename_parts[0]}_{date}_{unique_hash}{filename_parts[1]}"
 
-        s3_key = f"research_reports/{topic_name}/{unique_pdf_name}"
+        s3_key = f"research_reports/{topic_name}/{unique_pdf_name}".replace("\\", "/")
 
         with open(pdf_path, 'rb') as pdf_file:
             pdf_data = pdf_file.read()
-            download_url = upload_to_s3(pdf_data, s3_key)
+            if not pdf_data:
+                raise ValueError("PDF file is empty")
+
+            logger.info(f"PDF file read successfully, size: {len(pdf_data)} bytes")
+
+            download_url = reliable_upload_to_s3(pdf_data, s3_key)
+
+            if not download_url:
+                raise Exception("Failed to upload PDF to S3, no download URL returned")
 
         return {
             "status": "success",
@@ -116,8 +154,6 @@ async def deep_research(
                 f"PDF report generated: {unique_pdf_name}\n"
                 f"Download link: {download_url}\n"
             ),
-            "output_dir": output_dir,
-            "query": query,
             "pdf_download_url": download_url
         }
     except Exception as err:
@@ -127,7 +163,6 @@ async def deep_research(
             "summary": f"AI self-heal: Encountered error during deep research: {err}",
         }
     finally:
-        # Clean up the research documents regardless of success or failure
         logger.info(f"Cleaning up research documents in {results_dir}")
         if os.path.exists(results_dir):
             remove_directory_contents(results_dir)

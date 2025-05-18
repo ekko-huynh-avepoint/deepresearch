@@ -114,7 +114,7 @@ class StormInformationTable(InformationTable):
     @staticmethod
     def paraphrase_with_ollama(text):
         model = os.environ.get("PARAPHRASE_MODEL")
-        endpoint = os.environ.get('OLLAMA_EMB')
+        endpoint = os.environ.get('OLLAMA_EMB2')
         if not endpoint:
             return text
         url = f"{endpoint}/api/generate"
