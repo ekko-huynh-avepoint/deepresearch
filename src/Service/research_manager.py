@@ -65,13 +65,12 @@ class ResearchManager:
         lm_configs.set_article_gen_lm(GroqModel("deepseek-r1-distill-llama-70b", max_tokens=96000, **groq_kwargs))
         lm_configs.set_article_polish_lm(GroqModel("deepseek-r1-distill-llama-70b", max_tokens=96000, **groq_kwargs))
 
-        max_threads = max(1, (os.cpu_count() or 4) - 2)
         engine_args = STORMWikiRunnerArguments(
             output_dir=output_dir,
-            max_conv_turn=4,
-            max_perspective=4,
-            search_top_k=4,
-            max_thread_num=max_threads,
+            max_conv_turn=2,
+            max_perspective=2,
+            search_top_k=2,
+            max_thread_num=os.cpu_count(),
         )
 
         retriever = self._get_retriever()
