@@ -153,13 +153,12 @@ class ResearchManager:
         lm_configs.set_article_gen_lm(self._build_azure_openai_model(gpt_4_model_name, 16384, **openai_kwargs))
         lm_configs.set_article_polish_lm(self._build_azure_openai_model(gpt_4_model_name, 16384, **openai_kwargs))
 
-        max_threads = max(1, (os.cpu_count() or 4) - 2)
         engine_args = STORMWikiRunnerArguments(
             output_dir=output_dir,
-            max_conv_turn=5,
-            max_perspective=5,
-            search_top_k=5,
-            max_thread_num=max_threads,
+            max_conv_turn=2,
+            max_perspective=2,
+            search_top_k=2,
+            max_thread_num=os.cpu_count(),
         )
 
         retriever = self._get_retriever()
